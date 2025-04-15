@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #3382D1;
+    --color-secondary: #66BAF1;
+    --color-gray: #4C5A70;
+    --color-dark: #252B34;
+    --color-light: #FFF9F3;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
