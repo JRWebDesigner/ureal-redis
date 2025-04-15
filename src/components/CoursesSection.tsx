@@ -1,43 +1,13 @@
 "use client";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay'
 import { FaChevronRight } from 'react-icons/fa';
-import Image from 'next/image';
-
-const courses = [
-  {
-    id: 1,
-    title: "Curso 2: APRENDA APERTURAR EMPRESAS ANTE LA AGEMED",
-    image: "/aperturar-importadora.jpg",
-    syllabus: [
-      "Base legal",
-      "Clasificación",
-      "Requisitos",
-      "Trámites",
-      "Infraestructura",
-      "Equipamiento",
-    ],
-    topics: [
-      "BASE LEGAL",
-      "CLASIFICACIÓN",
-      "REQUISITOS",
-      "COMO REALIZAR EL TRAMITE",
-      "INFRAESTRUCTURA",
-      "EQUIPAMIENTO",
-      "INSPECCIÓN",
-      "Y RESOLVERÁS TUS DUDAS"
-    ],
-    price: "Bs 20",
-    duration: "3 días",
-    teacher: "Q.F. Dra Marianela Apaza",
-    inscriptionLink: "#"
-  }
-];
-
+import Link from "next/link";
 const CourseCarousel = () => {
   return (
     <section className="bg-[#fff7f2] py-12 px-4">
@@ -49,61 +19,117 @@ const CourseCarousel = () => {
       </div>
 
       <Swiper
-        modules={[Navigation, Pagination]}
-        navigation
-        pagination={{ clickable: true }}
-        spaceBetween={20}
-        slidesPerView={1}
+ modules={[Navigation, Pagination, Autoplay]}
+  navigation
+  pagination={{ clickable: true }}
+  spaceBetween={20}
+  slidesPerView={1}
+  autoplay={{
+    delay: 3000,
+    disableOnInteraction: false,
+  }}
+  loop={true}
         className="max-w-5xl mx-auto"
       >
-        {courses.map(course => (
-          <SwiperSlide key={course.id}>
-            <div className="bg-white rounded-xl shadow-lg p-6 grid md:grid-cols-2 gap-6 items-center">
-              <div>
-                <Image
-                  src={course.image}
-                  alt={course.title}
-                  width={500}
-                  height={500}
-                  className="rounded-xl"
-                />
-                <h3 className="text-lg font-bold mt-4 mb-2">Temario</h3>
-                <ul className="space-y-2">
-                  {course.syllabus.map((item, idx) => (
-                    <li
-                      key={idx}
-                      className="bg-red-600 text-white px-4 py-1.5 rounded-full w-fit font-semibold text-sm"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <div className="text-sm mt-4 text-gray-700">
-                  <strong>Expositora:</strong> {course.teacher}<br />
-                  Con amplia experiencia en apertura de empresas y conocimiento en temas regulatorios.<br />
-                  <strong>Incluye:</strong> Certificado avalado por la Universidad Real, material práctico.
-                </div>
-              </div>
+ <SwiperSlide key="produccion-musical">
+  <div className="bg-white rounded-xl shadow-lg p-6 grid md:grid-cols-2 gap-6 items-center">
+    <div>
+      <img
+        src="/Images/curso1.jpg" // Reemplaza con la ruta correcta
+        alt="PRODUCCIÓN MUSICAL y MUSIC BUSINESS"
+        width={500}
+        height={500}
+        className="rounded-xl w-[500px] h-[500px] object-cover"
+      />
+    </div>
 
-              <div>
-                <h3 className="text-xl font-bold mb-2 text-gray-800">{course.title}</h3>
-                <p className="text-sm text-gray-700 mb-4">¿Qué aprenderás?</p>
-                <ul className="text-sm text-gray-800 list-decimal list-inside mb-4 space-y-1">
-                  {course.topics.map((topic, idx) => (
-                    <li key={idx}>{topic}</li>
-                  ))}
-                </ul>
-                <p className="mb-1"><strong>Precio:</strong> {course.price}</p>
-                <p className="mb-1"><strong>Duración:</strong> {course.duration}</p>
-                <p className="mb-4"><strong>Docente:</strong> {course.teacher}</p>
-                <a href={course.inscriptionLink} className="inline-flex items-center text-blue-600 hover:underline font-medium">
-                  Inscribete <FaChevronRight className="ml-2" />
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <div>
+      <h3 className="text-xl font-bold mb-2 text-gray-800">PRODUCCIÓN MUSICAL y MUSIC BUSINESS</h3>
+      <p className="text-sm text-gray-700 mb-4">¿Qué aprenderás?</p>
+      <ul className="text-sm text-gray-800 list-decimal list-inside mb-4 space-y-1">
+        <li>Semana 1: Fundamentos de la producción musical</li>
+        <li>Semana 2: Grabación y construcción musical</li>
+        <li>Semana 3: Diseño sonoro y contexto industrial</li>
+        <li>Semana 4: Creación, lanzamiento y evaluación</li>
+      </ul>
+      <p className="mb-1"><strong>Precio:</strong> Bs. 700</p>
+      <p className="mb-1"><strong>Duración:</strong> 1 mes (lunes, miércoles y viernes de 19:00 a 20:30)</p>
+      <p className="mb-4"><strong>Docente:</strong> Especialista en producción musical</p>
+      <p className="mb-4"><strong>Inicio:</strong> 14 de abril</p>
+      <p className="mb-4"><strong>Certificación:</strong> Experto</p>
+      <a href="#inscripcion" className="inline-flex items-center text-blue-600 hover:underline font-medium">
+        Inscríbete <FaChevronRight className="ml-2" />
+      </a>
+    </div>
+  </div>
+</SwiperSlide>
+
+<SwiperSlide key="apertura-empresas">
+  <div className="bg-white rounded-xl shadow-lg p-6 grid md:grid-cols-2 gap-6 items-center">
+    <div>
+      <img
+        src="/Images/curso2.jpg" // Reemplaza con la ruta correcta
+        alt="APRENDA APERTURAR EMPRESAS ANTE LA AGEMED"
+        width={500}
+        height={500}
+        className="rounded-xl w-[500px] h-[500px] object-cover"
+      />
+    </div>
+
+    <div>
+      <h3 className="text-xl font-bold mb-2 text-gray-800">APRENDA APERTURAR EMPRESAS ANTE LA AGEMED</h3>
+      <p className="text-sm text-gray-700 mb-4">¿Qué aprenderás?</p>
+      <ul className="text-sm text-gray-800 list-decimal list-inside mb-4 space-y-1">
+        <li>BASE LEGAL</li>
+        <li>CLASIFICACIÓN</li>
+        <li>REQUISITOS</li>
+        <li>COMO REALIZAR EL TRAMITE</li>
+        <li>INFRAESTRUCTURA</li>
+        <li>EQUIPAMIENTO</li>
+        <li>INSPECCION</li>
+        <li>Y RESOLVERAS TUS DUDAS</li>
+      </ul>
+      <p className="mb-1"><strong>Precio:</strong> Bs. 20</p>
+      <p className="mb-1"><strong>Duración:</strong> 3 días</p>
+      <p className="mb-4"><strong>Docente:</strong> Q.F. Dra Marianela Apaza</p>
+      <a href="#inscripcion" className="inline-flex items-center text-blue-600 hover:underline font-medium">
+        Inscríbete <FaChevronRight className="ml-2" />
+      </a>
+    </div>
+  </div>
+</SwiperSlide>
+
+<SwiperSlide key="marketing-excelencia">
+  <div className="bg-white rounded-xl shadow-lg p-6 grid md:grid-cols-2 gap-6 items-center">
+    <div>
+      <img
+        src="/Images/curso3.jpg" // Reemplaza con la ruta correcta
+        alt="Contenidos de Marketing de Excelencia"
+        width={500}
+        height={500}
+        className="rounded-xl w-[500px] h-[500px] object-cover"
+      />
+    </div>
+
+    <div>
+      <h3 className="text-xl font-bold mb-2 text-gray-800">Contenidos de Marketing de Excelencia</h3>
+      <p className="text-sm text-gray-700 mb-4">¿Qué aprenderás?</p>
+      <p className="text-sm text-gray-800 mb-4">
+        En un mundo online lleno de información, destacar requiere más que solo palabras en una página. 
+        Nuestro curso "Content Marketing Excellence" va más allá de lo básico, equipándote con el 
+        conocimiento y las habilidades necesarias para crear contenido que se eleve por encima del ruido, 
+        capture la atención y logre tus objetivos de marketing.
+      </p>
+      <p className="mb-1"><strong>Precio:</strong> Bs. 150</p>
+      <p className="mb-1"><strong>Duración:</strong> 1 mes</p>
+      <p className="mb-4"><strong>Docente:</strong> Especialista en Marketing Digital</p>
+      <a href="#inscripcion" className="inline-flex items-center text-blue-600 hover:underline font-medium">
+        Inscríbete <FaChevronRight className="ml-2" />
+      </a>
+    </div>
+  </div>
+      </SwiperSlide>
+    </Swiper>
     </section>
   );
 };

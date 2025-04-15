@@ -5,9 +5,8 @@ import Link from 'next/link'
 
 export default function HeroSection() {
   return (
-    <>
     <section 
-      className="relative h-[100vh] flex items-center justify-center flex-col bg-dark text-white"
+      className="relative h-[110vh] flex items-center justify-center bg-dark text-white"
       style={{
         backgroundImage: "url(/Images/hero.jpg)",
         backgroundSize: 'cover',
@@ -16,15 +15,14 @@ export default function HeroSection() {
     >
       <div className="absolute inset-0 bg-dark/50"></div>
       
-      <div className="container flex items-center justify-beetwen mx-auto px-4 relative z-10 py-32">
-
+      <div className="container mx-auto px-4 relative z-10 py-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="max-w-2xl"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Universidad Real de la Cámara Nacional de Comercio
           </h1>
           <h2 className="text-xl md:text-2xl mb-8 font-medium">
@@ -46,9 +44,7 @@ export default function HeroSection() {
             </Link>
           </div>
           
-
-        </motion.div>
-                  <div className="absolute right-1 flex flex-col space-x-4">
+          <div className="flex space-x-4">
             {[1, 2, 3, 4, 5].map((item) => (
               <Link 
                 key={item} 
@@ -59,68 +55,27 @@ export default function HeroSection() {
               </Link>
             ))}
           </div>
-             </div> 
- <motion.div 
-          className="absolute z-30 py-3 bottom-0 bg-white/10 backdrop-blur-md w-full hidden lg:block"
+        </motion.div>
+        
+        <motion.div 
+          className="absolute right-20 bottom-20 hidden lg:block"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
+          className="absolute z-30 py-3 bottom-0 bg-black/90 md:bg-white/10 backdrop-blur-md w-full block"
         >
-             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-6"
-        >
-          <div>
-            <h3 className="text-lg font-semibold mb-2">
-              Aprendizaje Basado en Experiencias
-            </h3>
-            <p className="text-sm text-gray-300">
-              Los estudiantes participan activamente en proyectos, simulaciones, pasantías o casos reales.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-2">
-              Experiencia Práctica
-            </h3>
-            <p className="text-sm text-gray-300">
-              Desarrolla habilidades prácticas con proyectos reales en más de 100 empresas asociadas a la Cámara Nacional de Comercio.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-2">
-              Crecimiento Personal
-            </h3>
-            <p className="text-sm text-gray-300">
-              Accede a amplias oportunidades laborales en empresas afiliadas a la Cámara Nacional de Comercio al finalizar tu carrera.
-            </p>
+          <div className="flex flex-col space-y-8">
+            {[
+              "Aprendizaje Basado en Experiencias",
+              "Experiencia Práctica",
+              "Crecimiento Personal"
+            ].map((item, index) => (
+              <div key={index} className="bg-white/10 backdrop-blur-md p-4 rounded-lg max-w-xs border border-white/20">
+                <p className="text-sm">{item}</p>
+              </div>
+            ))}
           </div>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="w-full h-full aspect-video"
-        >
-          <div className="w-full h-full">
-            <iframe
-              className="w-full h-full rounded-xl shadow-lg"
-              src="https://www.youtube.com/embed/OVT1aIUet28"
-              title="Video institucional"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </motion.div>
-      </div>    
-        </motion.div>   
-
-      </section>
-
-    </>
+      </div>
+    </section>
   )
 }

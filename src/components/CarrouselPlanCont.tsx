@@ -21,7 +21,7 @@ export default function PromoMarquee() {
           x: ['0%', '-100%']
         }}
         transition={{
-          duration: 700, // ¡Súper rápido! (menos = más rápido)
+          duration: 20, // ¡Súper rápido! (menos = más rápido)
           ease: "linear",
           repeat: Infinity,
           repeatType: "loop"

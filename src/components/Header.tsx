@@ -99,7 +99,7 @@ export default function Header() {
             </motion.div>
 
             {/* Menú Desktop */}
-            <ul className="hidden md:flex gap-4 text-white items-center uppercase">
+            <ul className="hidden md:flex gap-4 text-white items-center">
               {links.map((link) => (
                 <motion.li
                   key={link.name}
