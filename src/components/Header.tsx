@@ -166,7 +166,7 @@ export default function Header() {
                 className="md:hidden bg-gray-900 text-white overflow-y-auto uppercase fixed top-[130px] bottom-0 left-0 right-0 z-40"
               >
                 <ul className="flex flex-col gap-1 py-4 px-4">
-                  {additionalLinks.map((link, index) => (
+                  {additionalLinks.map((link) => (
                     <motion.li key={link.name}>
                       <Link
                         href={link.href}
@@ -177,7 +177,7 @@ export default function Header() {
                     </motion.li>
                   ))}
                   <div className="border-t border-gray-700 my-2" />
-                  {links.map((link, index) => (
+                  {links.map((link) => (
                     <motion.li key={link.name}>
                       {link.submenu ? (
                         <div className="mb-2">
