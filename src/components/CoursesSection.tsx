@@ -116,7 +116,7 @@ const CourseCarousel = () => {
       <p className="text-sm text-gray-700 mb-4">¿Qué aprenderás?</p>
       <p className="text-sm text-gray-800 mb-4">
   En un mundo online lleno de información, destacar requiere más que solo palabras en una página. 
-  Nuestro curso 'Content Marketing Excellence' va más allá de lo básico, equipándote con el 
+  Nuestro curso <strong>Content Marketing Excellence</strong> va más allá de lo básico, equipándote con el 
   conocimiento y las habilidades necesarias para crear contenido que se eleve por encima del ruido, 
   capture la atención y logre tus objetivos de marketing.
 </p>

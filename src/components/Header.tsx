@@ -42,18 +42,6 @@ export default function Header() {
     setOpenSubmenu(openSubmenu === menuName ? null : menuName);
   };
 
-  const renderSocialIcon = (Icon: IconComponent, href: string, label: string) => (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={label}
-      className="text-white hover:text-red-500 transition-colors duration-300 p-2 uppercase"
-    >
-      <Icon className="w-5 h-5" />
-    </a>
-  );
-
   const additionalLinks = [
     { name: "CONÓCENOS", href: "/conocenos" },
     { name: "SOY UREAL", href: "http://sistema.ureal.edu.bo/" },
