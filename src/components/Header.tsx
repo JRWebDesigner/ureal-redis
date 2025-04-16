@@ -6,8 +6,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname } from "next/navigation";
 import { FaBars, FaTimes, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
-type IconComponent = React.ComponentType<React.SVGProps<SVGSVGElement>>;
-
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
