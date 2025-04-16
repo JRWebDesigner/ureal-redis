@@ -42,7 +42,6 @@ import DiscountSection from '../components/DiscountSection'
 import ContactForm from '../components/ContactForm'
 import Testimonials from '../components/Testimonials'
 import ContactInfo from '../components/ContactInfo'
-import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -61,7 +60,6 @@ export default function Home() {
         <Testimonials />
         <ContactInfo />
       </main>
-      <Footer />
     </div>
   )
 }

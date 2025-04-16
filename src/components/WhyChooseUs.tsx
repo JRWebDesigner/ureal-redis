@@ -9,16 +9,16 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 const careers = [
-  { title: "COMERCIO INTERNACIONAL", img: "/comercio.jpg", slug: "comercio-internacional" },
-  { title: "INGENIERÍA EN SISTEMAS", img: "/sistemas.jpg", slug: "ingenieria-en-sistemas" },
-  { title: "COMUNICACIÓN AUDIOVISUAL", img: "/comunicacion.jpg", slug: "comunicacion-audiovisual" },
-  { title: "MERCADOTECNIA", img: "/mercadotecnia.jpg", slug: "mercadotecnia" },
-  { title: "ADMINISTRACIÓN DE EMPRESAS", img: "/administracion.jpg", slug: "administracion-de-empresas" },
-  { title: "PSICOLOGÍA", img: "/psicologia.jpg", slug: "psicologia" },
-  { title: "CONTADURÍA PÚBLICA", img: "/contaduria.jpg", slug: "contaduria-publica" },
-  { title: "DERECHO", img: "/derecho.jpg", slug: "derecho" },
-  { title: "DISEÑO GRÁFICO", img: "/diseno.jpg", slug: "diseno-grafico" },
-  { title: "NEGOCIOS INTERNACIONALES", img: "/negocios.jpg", slug: "negocios-internacionales" }
+  { title: "Administración Financiera", img: "/carreras/PFinanciera.jpg", slug: "/pregrado/administracion-financiera" },
+  { title: "Comercio Internacional", img: "/carreras/PComercio.jpg", slug: "/pregrado/comercio-internacional" },
+  { title: "Comunicación Audiovisual", img: "/carreras/PAudiovisual.jpg", slug: "/pregrado/comunicacion-audiovisual" },
+  { title: "Mercadotecnia", img: "/carreras/PMercadotecnia.jpg", slug: "/pregrado/mercadotecnia" },
+  { title: "Ingeniería en Sistemas y Computación Administrativa", img: "/carreras/PSistemas-computacion.jpg", slug: "/pregrado/ingenieria-sistemas" },
+  { title: "Administración Turística y Hotelería", img: "/carreras/PTurismo.jpg", slug: "/pregrado/administracion-turistica" },
+  { title: "Administración de Empresas", img: "/carreras/PAdministracion.jpg", slug: "/pregrado/administracion-empresas" },
+  { title: "Contaduría Pública", img: "/carreras/PContaduria.jpg", slug: "/pregrado/contaduria-publica" },
+  { title: "Ingeniería Comercial", img: "/carreras/PIngenieria-comercial.jpg", slug: "/pregrado/ingenieria-comercial" },
+  { title: "Derecho", img: "/carreras/PDerecho.jpg", slug: "/pregrado/derecho" }
 ];
 
 const WhyChooseUs = () => {

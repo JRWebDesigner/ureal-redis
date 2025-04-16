@@ -2,11 +2,12 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaTiktok } from 'react-icons/fa'
 
 export default function HeroSection() {
   return (
     <section 
-      className="relative h-[110vh] flex items-center justify-center bg-dark text-white"
+      className="relative h-auto  md:h-[110vh] flex md:items-center justify-center bg-dark flex-col text-white"
       style={{
         backgroundImage: "url(/Images/hero.jpg)",
         backgroundSize: 'cover',
@@ -43,39 +44,73 @@ export default function HeroSection() {
               Carreras
             </Link>
           </div>
-          
-          <div className="flex space-x-4">
-            {[1, 2, 3, 4, 5].map((item) => (
-              <Link 
-                key={item} 
-                href="#" 
-                className="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full hover:bg-white/30 transition-all"
-              >
-                {/* Icono de red social */}
-              </Link>
-            ))}
-          </div>
         </motion.div>
-        
-        <motion.div 
-          className="absolute right-20 bottom-20 hidden lg:block"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-        >
-          <div className="flex flex-col space-y-8">
-            {[
-              "Aprendizaje Basado en Experiencias",
-              "Experiencia Práctica",
-              "Crecimiento Personal"
-            ].map((item, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-md p-4 rounded-lg max-w-xs border border-white/20">
-                <p className="text-sm">{item}</p>
-              </div>
-            ))}
-          </div>
-        </motion.div>
+
+        {/* Redes Sociales */}
+        <div className="flex md:flex-col gap-5 md:absolute right-4 top-1/2 transform -translate-y-1/2">
+          {[
+            { icon: <FaFacebook size={20} />, color: 'text-white' },
+            { icon: <FaInstagram size={20} />, color: 'text-white' },
+            { icon: <FaTwitter size={20} />, color: 'text-white' },
+            { icon: <FaYoutube size={20} />, color: 'text-white' },
+            { icon: <FaTiktok size={20} />, color: 'text-white' }
+          ].map((social, index) => (
+            <Link 
+              key={index} 
+              href="#" 
+              className={`w-10 h-10 flex items-center justify-center bg-white/20 rounded-full hover:bg-white/30 transition-all ${social.color}`}
+            >
+              {social.icon}
+            </Link>
+          ))}
+        </div>
       </div>
+      {/* Sección de beneficios en el pie */}
+      <motion.div 
+  className="w-full bg-black/40 backdrop-blur-md relative md:absolute md:bottom-0"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.5, duration: 0.8 }}
+>
+  <div className="container mx-auto py-8 px-4">
+    <div className="flex flex-wrap md:grid md:grid-cols-4 gap-6 items-start text-white">
+      <div className="flex w-full md:col-span-3 justify-between gap-4">
+        {[
+          {
+            title: "Aprendizaje Basado en Experiencias",
+            content: "Los estudiantes participan activamente en proyectos, simulaciones, pasantías o casos reales."
+          },
+          {
+            title: "Experiencia Práctica",
+            content: "Desarrolla habilidades prácticas con proyectos reales en más de 100 empresas asociadas a la Cámara Nacional de Comercio."
+          },
+          {
+            title: "Crecimiento Personal",
+            content: "Accede a amplias oportunidades laborales en empresas afiliadas a la Cámara Nacional de Comercio al finalizar tu carrera."
+          }
+        ].map((item, index) => (
+          <div key={index} className="flex-1 min-w-[200px]">
+            <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+            <p className="text-sm">{item.content}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* YouTube video */}
+      <div className="w-full md:w-auto">
+          <div className="aspect-w-4 h-[270px] md:h-auto md:aspect-h-3 w-full">
+            <iframe 
+              src="https://www.youtube.com/embed/OVT1aIUet28"
+              title="YouTube video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+              className="w-full h-full rounded-lg shadow-md"
+            ></iframe>
+          </div>
+        </div>
+    </div>
+  </div>
+</motion.div>
     </section>
   )
 }
