@@ -69,6 +69,7 @@ const WhyChooseUs = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: index * 0.2 }}
           viewport={{ once: true }}
+          className='relative'
         >
 
           <img
