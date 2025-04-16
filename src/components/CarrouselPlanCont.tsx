@@ -11,7 +11,7 @@ export default function PromoMarquee() {
   const items = Array(20).fill(message)
 
   return (
-    <div 
+    <div id='#formacion'  
       ref={containerRef}
       className="w-full bg-white text-black py-3 overflow-hidden border-y border-gray-200"
     >

@@ -7,7 +7,7 @@ const authorities = [
   {
     name: "Lic. Eduardo Olivo Gamarra",
     position: "PRESIDENTE DE LA UNIVERSIDAD",
-    description: "Especialista en el rubro de seguros, Eduardo Olivo cuenta con una amplia trayectoria profesional...",
+    description: "Especialista en el rubro de seguros, Eduardo Olivo cuenta con una amplia trayectoria profesional. Actualmente tiene un importante rol en directorios y cámaras y una visión de compromiso con Bolivia y el futuro de las nuevas generaciones. Habla de fortalecer el sistema empresarial, de la búsqueda de la unidad de los empresarios, del liderazgo de Sudamericana en el mercado y cómo, gracias a alianzas con empresas de la talla de Willis Towers Watson, han logrado representar a los corredores de seguros más importantes del mundo.",
     image: "/Images/presidente.jpg",
     socialLinks: [
       { name: "LinkedIn", url: "#" },
@@ -19,7 +19,7 @@ const authorities = [
   {
     name: "Carlos Andia Alarcón Phd.",
     position: "RECTOR DE LA UNIVERSIDAD",
-    description: "El Dr. Carlos Andia es un destacado académico...",
+    description: "El Dr. Carlos Andia es un destacado académico de la Facultad de Ciencias Económicas y Empresariales.  Economista con una Maestría en Administración de Empresas y Finanzas y un Doctorado en Estrategias del Desarrollo, se destaca por su experiencia y liderazgo. Apasionado por la enseñanza y el aprendizaje, promueve la formación de profesionales íntegros y responsables. Además, es un líder tanto dentro como fuera del aula, combinando su amor por el deporte (ciclismo, maratón, natación, triatlón) con su trayectoria académica.",
     image: "/Images/rector.jpg",
     socialLinks: [
       { name: "LinkedIn", url: "#" },
@@ -47,7 +47,7 @@ const getIcon = (name: string) => {
 
 export default function AuthoritiesSection() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section id='#extencion' className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

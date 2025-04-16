@@ -39,14 +39,6 @@ export default function Header() {
     setOpenSubmenu(openSubmenu === menuName ? null : menuName);
   };
 
-  const additionalLinks = [
-    { name: "CONÓCENOS", href: "/conocenos" },
-    { name: "SOY UREAL", href: "http://sistema.ureal.edu.bo/" },
-    { name: "CAMPUS VIRTUAL", href: "https://virtual.ureal.edu.bo/login/index.php" },
-    { name: "MICROSOFT LEARN", href: "https://teams.microsoft.com/v2/" },
-    { name: "BIBLIOTECA", href: "https://ureal.edu.bo/landingbiblio.html" }
-  ];
-
   return (
     <header>
       <Container>
@@ -163,19 +155,9 @@ export default function Header() {
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.3 }}
-                className="md:hidden bg-gray-900 text-white overflow-y-auto uppercase fixed top-[130px] bottom-0 left-0 right-0 z-40"
+                className="md:hidden bg-gray-900 text-white overflow-y-auto uppercase fixed top-[190px] bottom-0 left-0 right-0 z-40"
               >
                 <ul className="flex flex-col gap-1 py-4 px-4">
-                  {additionalLinks.map((link) => (
-                    <motion.li key={link.name}>
-                      <Link
-                        href={link.href}
-                        className="block px-4 py-3 rounded-lg hover:bg-gray-800 text-white"
-                      >
-                        {link.name}
-                      </Link>
-                    </motion.li>
-                  ))}
                   <div className="border-t border-gray-700 my-2" />
                   {links.map((link) => (
                     <motion.li key={link.name}>

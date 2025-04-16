@@ -42,7 +42,7 @@ export default function PlatformsSection() {
           <h2 className="text-5xl font-bold mb-4">Accede a nuestras plataformas académicas</h2>
         </motion.div>
 
-        <div className="relative z-30 flex justify-around items-center gap-8">
+        <div className="relative z-30 flex flex-wrap justify-around items-center gap-8">
           {platforms.map((platform, index) => (
             <motion.div
               key={index}

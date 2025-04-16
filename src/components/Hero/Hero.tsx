@@ -74,7 +74,7 @@ export default function HeroSection() {
 >
   <div className="container mx-auto py-8 px-4">
     <div className="flex flex-wrap md:grid md:grid-cols-4 gap-6 items-start text-white">
-      <div className="flex w-full md:col-span-3 justify-between gap-4">
+      <div className="flex flex-wrap w-full md:col-span-3 justify-between gap-4">
         {[
           {
             title: "Aprendizaje Basado en Experiencias",
@@ -95,8 +95,6 @@ export default function HeroSection() {
           </div>
         ))}
       </div>
-
-      {/* YouTube video */}
       <div className="w-full md:w-auto">
           <div className="aspect-w-4 h-[270px] md:h-auto md:aspect-h-3 w-full">
             <iframe 
