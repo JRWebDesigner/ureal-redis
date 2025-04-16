@@ -85,7 +85,7 @@ export default function Testimonials() {
                       <h3 className="text-lg font-semibold text-gray-900">{testimonial.name}</h3>
                     </div>
                     <p className="text-gray-600 mt-4 flex-grow">
-                      "{testimonial.comment}"
+                      {testimonial.comment}
                     </p>
                   </div>
                 </div>

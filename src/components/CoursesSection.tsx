@@ -57,9 +57,9 @@ const CourseCarousel = () => {
       <p className="mb-4"><strong>Docente:</strong> Especialista en producción musical</p>
       <p className="mb-4"><strong>Inicio:</strong> 14 de abril</p>
       <p className="mb-4"><strong>Certificación:</strong> Experto</p>
-      <a href="#inscripcion" className="inline-flex items-center text-blue-600 hover:underline font-medium">
+      <Link href="#inscripcion" className="inline-flex items-center text-blue-600 hover:underline font-medium">
         Inscríbete <FaChevronRight className="ml-2" />
-      </a>
+      </Link>
     </div>
   </div>
 </SwiperSlide>
@@ -92,9 +92,9 @@ const CourseCarousel = () => {
       <p className="mb-1"><strong>Precio:</strong> Bs. 20</p>
       <p className="mb-1"><strong>Duración:</strong> 3 días</p>
       <p className="mb-4"><strong>Docente:</strong> Q.F. Dra Marianela Apaza</p>
-      <a href="#inscripcion" className="inline-flex items-center text-blue-600 hover:underline font-medium">
+      <Link href="#inscripcion" className="inline-flex items-center text-blue-600 hover:underline font-medium">
         Inscríbete <FaChevronRight className="ml-2" />
-      </a>
+      </Link>
     </div>
   </div>
 </SwiperSlide>
@@ -115,17 +115,18 @@ const CourseCarousel = () => {
       <h3 className="text-xl font-bold mb-2 text-gray-800">Contenidos de Marketing de Excelencia</h3>
       <p className="text-sm text-gray-700 mb-4">¿Qué aprenderás?</p>
       <p className="text-sm text-gray-800 mb-4">
-        En un mundo online lleno de información, destacar requiere más que solo palabras en una página. 
-        Nuestro curso "Content Marketing Excellence" va más allá de lo básico, equipándote con el 
-        conocimiento y las habilidades necesarias para crear contenido que se eleve por encima del ruido, 
-        capture la atención y logre tus objetivos de marketing.
-      </p>
+  En un mundo online lleno de información, destacar requiere más que solo palabras en una página. 
+  Nuestro curso 'Content Marketing Excellence' va más allá de lo básico, equipándote con el 
+  conocimiento y las habilidades necesarias para crear contenido que se eleve por encima del ruido, 
+  capture la atención y logre tus objetivos de marketing.
+</p>
+
       <p className="mb-1"><strong>Precio:</strong> Bs. 150</p>
       <p className="mb-1"><strong>Duración:</strong> 1 mes</p>
       <p className="mb-4"><strong>Docente:</strong> Especialista en Marketing Digital</p>
-      <a href="#inscripcion" className="inline-flex items-center text-blue-600 hover:underline font-medium">
+      <Link href="#inscripcion" className="inline-flex items-center text-blue-600 hover:underline font-medium">
         Inscríbete <FaChevronRight className="ml-2" />
-      </a>
+      </Link>
     </div>
   </div>
       </SwiperSlide>

@@ -2,13 +2,13 @@
 
 import { MdCampaign } from "react-icons/md"
 import { motion } from "framer-motion"
-import { useRef, useState, useEffect } from "react"
+import { useRef } from "react"
 
 const message = "Accede al plan Contado!"
 
 export default function PromoMarquee() {
   const containerRef = useRef(null)
-  const [items, setItems] = useState(Array(20).fill(message))
+  const items = Array(20).fill(message)
 
   return (
     <div 
@@ -21,7 +21,7 @@ export default function PromoMarquee() {
           x: ['0%', '-100%']
         }}
         transition={{
-          duration: 20, // ¡Súper rápido! (menos = más rápido)
+          duration: 20,
           ease: "linear",
           repeat: Infinity,
           repeatType: "loop"

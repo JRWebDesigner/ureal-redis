@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaChalkboardTeacher, FaHandshake, FaBrain, FaCertificate, FaChartLine, FaLink } from "react-icons/fa";
+import { FaChalkboardTeacher, FaHandshake, FaBrain, FaCertificate, FaChartLine } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import 'swiper/css';
