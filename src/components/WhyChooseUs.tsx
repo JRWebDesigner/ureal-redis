@@ -82,9 +82,9 @@ const WhyChooseUs = () => {
             <h3 className="text-sm font-bold leading-snug">{career.title}</h3>
           </div>
 
-          <div className="hidden md:block absolute bottom-0 left-0 right-0  inset-0 bg-gradient-to-t from-blue-700 via-blue-500/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 text-white flex flex-col justify-end">
-            <h3 className="text-sm font-bold leading-snug">{career.title}</h3>
-          </div>
+          <div className="hidden md:block absolute bottom-0 left-0 right-0 bg-gradient-to-t from-blue-700 via-blue-500/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 text-white">
+  <h3 className="text-sm font-bold leading-snug">{career.title}</h3>
+</div>
 
         </motion.div>
       </Link>
