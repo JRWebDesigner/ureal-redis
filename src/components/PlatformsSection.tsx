@@ -1,5 +1,5 @@
 'use client'
-
+import fondo2 from '@/public/Images/fondo2.png'
 import { motion } from 'framer-motion'
 
 const platforms = [
@@ -31,7 +31,8 @@ const platforms = [
 
 export default function PlatformsSection() {
   return (
-    <section className="py-20 bg-dark text-white">
+    <section className="py-20 bg-black text-primary"
+    >
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,13 +53,13 @@ export default function PlatformsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5 }}
-              className="bg-white/10 backdrop-blur-md rounded-xl p-8 text-center hover:bg-white/20 transition-all"
+              className="relative bg-white rounded-xl p-4 text-center hover:bg-white/80 transition-all"
             >
-              <div className="bg-white/20 w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <div className="absolute top-[-50px] left-[20px] bg-white w-16 h-16 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <img src={platform.icon} alt={platform.name} className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">{platform.name}</h3>
-              <p className="text-white/80 mb-6">{platform.description}</p>
+              <p className="mb-6">{platform.description}</p>
               <a 
                 href={platform.link} 
                 target="_blank"
