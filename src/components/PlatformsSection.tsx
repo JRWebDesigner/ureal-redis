@@ -1,50 +1,48 @@
 'use client'
-import fondo2 from '@/public/Images/fondo2.png'
 import { motion } from 'framer-motion'
 
 const platforms = [
   {
     name: "SISTEMA UREAL",
-    description: "Accede al sistema académico de la universidad",
+
     icon: "/icons/system.svg",
-    link: "http://sistema.ureal.edu.bo"
+    link: "http://sistema.ureal.edu.bo/"
   },
   {
     name: "CAMPUS VIRTUAL",
-    description: "Plataforma de aprendizaje en línea",
+   
     icon: "/icons/virtual.svg",
-    link: "#"
+    link: "http://builder.renderforestsites.com/"
   },
   {
     name: "MICROSOFT 365",
-    description: "Herramientas de productividad para estudiantes",
-    icon: "/icons/office.svg",
-    link: "#"
+  icon: "/icons/office.svg",
+    link: "http://builder.renderforestsites.com/"
   },
   {
     name: "BIBLIOTECA",
-    description: "Recursos bibliográficos digitales",
     icon: "/icons/library.svg",
-    link: "#"
+    link: "http://builder.renderforestsites.com/"
   }
 ]
 
 export default function PlatformsSection() {
   return (
-    <section className="py-20 bg-black text-primary"
+    <section className="relative py-20 bg-black text-primary"
     >
-      <div className="container mx-auto px-4">
+    <img src='/Images/fondo2.png' className='w-full h-full absolute z-10 object-cover opacity-45 -my-20' />
+      <div className="relative z-20 container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-32"
         >
-          <h2 className="text-4xl font-bold mb-4">Accede a nuestras plataformas académicas</h2>
+          <h2 className="text-5xl font-bold mb-4">Accede a nuestras plataformas académicas</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="relative z-30 flex justify-around items-center gap-8">
           {platforms.map((platform, index) => (
             <motion.div
               key={index}
@@ -53,18 +51,18 @@ export default function PlatformsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5 }}
-              className="relative bg-white rounded-xl p-4 text-center hover:bg-white/80 transition-all"
+              className="relative flex justify-center items-center flex-col w-[330px] h-[140px] bg-white rounded-xl p-4 text-center hover:bg-primary hover:text-white transition-all z-20"
             >
               <div className="absolute top-[-50px] left-[20px] bg-white w-16 h-16 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <img src={platform.icon} alt={platform.name} className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">{platform.name}</h3>
-              <p className="mb-6">{platform.description}</p>
+
               <a 
                 href={platform.link} 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary font-medium hover:underline"
+                className="font-medium hover:underline"
               >
                 Ingresa aquí
               </a>

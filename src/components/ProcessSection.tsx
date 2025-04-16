@@ -31,11 +31,8 @@ export default function ProcessSection() {
           <h2 className="text-4xl font-bold text-dark mb-4">Proceso de Inscripción</h2>
         </motion.div>
 
-        <div className="relative">
-          {/* Línea de tiempo */}
-          <div className="hidden lg:block absolute left-1/2 top-0 h-full w-0.5 bg-primary/20 transform -translate-x-1/2"></div>
-          
-          <div className="space-y-12 lg:space-y-0">
+        <div className="relative"> 
+                   <div className="flex justify-center items-center gap-8 flex-wrap">
             {steps.map((step, index) => (
               <motion.div
                 key={index}
@@ -43,22 +40,12 @@ export default function ProcessSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className={`relative lg:flex ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center justify-between gap-12`}
+                className={`w-[300px] p-5 ${index === 1 ? 'border-t-2 border-b-2 md:border-t-0 md:border-b-0 md:border-l-2 md:border-r-2 border-black': ''}`}
               >
-                {/* Punto en la línea de tiempo */}
-                <div className="hidden lg:block absolute left-1/2 top-1/2 w-6 h-6 rounded-full bg-primary transform -translate-x-1/2 -translate-y-1/2"></div>
-                
-                <div className={`lg:w-1/2 ${index % 2 === 0 ? 'lg:pr-12' : 'lg:pl-12'}`}>
+                <div>
                   <h3 className="text-2xl font-bold text-primary mb-4">{step.title}</h3>
                   <p className="text-gray">{step.description}</p>
-                </div>
-                
-                <div className={`lg:w-1/2 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'} mt-6 lg:mt-0`}>
-                  <div className="inline-block bg-light p-6 rounded-lg shadow-sm">
-                    <div className="text-5xl font-bold text-primary mb-2">0{index + 1}</div>
-                    <div className="w-16 h-1 bg-primary mx-auto lg:mx-0"></div>
-                  </div>
-                </div>
+                </div> 
               </motion.div>
             ))}
           </div>

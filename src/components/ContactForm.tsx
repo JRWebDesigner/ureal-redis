@@ -1,135 +1,165 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useForm } from 'react-hook-form'
+import { useState } from 'react'
 
-type FormData = {
-  name: string;
-  email: string;
-  phone: string;
-  career: string;
-  message: string;
-}
+const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    nombre: '',
+    celular: '',
+    email: '',
+    carrera: '',
+    comentarios: ''
+  })
 
-export default function ContactForm() {
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>()
+  const [errors, setErrors] = useState<Record<string, string>>({})
 
-  const onSubmit = (data: FormData) => {
-    console.log(data)
-    // Lógica para enviar el formulario
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }))
+    
+    // Clear error when user types
+    if (errors[name]) {
+      setErrors(prev => {
+        const newErrors = {...prev}
+        delete newErrors[name]
+        return newErrors
+      })
+    }
+  }
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    
+    // Simple validation
+    const newErrors: Record<string, string> = {}
+    if (!formData.nombre.trim()) newErrors.nombre = 'Este campo no puede estar vacío'
+    if (!formData.email.trim()) newErrors.email = 'Este campo no puede estar vacío'
+    if (!formData.carrera.trim()) newErrors.carrera = 'Este campo no puede estar vacío'
+    
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors)
+      return
+    }
+    
+    // Submit logic here (e.g., API call)
+    console.log('Form submitted:', formData)
+    alert('Formulario enviado con éxito!')
+  }
+
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  }
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5
+      }
+    }
   }
 
   return (
-    <section id="inscripcion" className="py-20 bg-light">
-      <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden"
-        >
-          <div className="md:flex">
-            <div className="md:w-1/2 bg-primary p-12 text-white">
-              <h2 className="text-3xl font-bold mb-6">Déjanos tus datos de contacto</h2>
-              <p className="mb-8">
-                Completa el formulario y nos pondremos en contacto contigo para brindarte más información.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <div className="mr-4">
-                    {/* Icono */}
-                  </div>
-                  <div>
-                    <h3 className="font-bold">Email</h3>
-                    <p>info@ureal.edu.bo</p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div className="mr-4">
-                    {/* Icono */}
-                  </div>
-                  <div>
-                    <h3 className="font-bold">Teléfono</h3>
-                    <p>+58411224060</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="md:w-1/2 p-12">
-              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-gray-700 mb-2">Nombre completo</label>
-                  <input
-                    id="name"
-                    type="text"
-                    {...register("name", { required: "Este campo es obligatorio" })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                  {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-gray-700 mb-2">Email</label>
-                  <input
-                    id="email"
-                    type="email"
-                    {...register("email", { 
-                      required: "Este campo es obligatorio",
-                      pattern: {
-                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$i,
-                        message: "Email inválido"
-                      }
-                    })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                  {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
-                </div>
-                
-                <div>
-                  <label htmlFor="phone" className="block text-gray-700 mb-2">Celular</label>
-                  <input
-                    id="phone"
-                    type="tel"
-                    {...register("phone", { required: "Este campo es obligatorio" })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                  {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>}
-                </div>
-                
-                <div>
-                  <label htmlFor="career" className="block text-gray-700 mb-2">Carrera de interés</label>
-                  <input
-                    id="career"
-                    type="text"
-                    {...register("career", { required: "Este campo es obligatorio" })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                  {errors.career && <p className="text-red-500 text-sm mt-1">{errors.career.message}</p>}
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-gray-700 mb-2">Comentarios</label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    {...register("message")}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  ></textarea>
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-b from-secondary to-primary text-white py-3 rounded-lg font-bold hover:bg-primary transition-all"
-                >
-                  Enviar
-                </button>
-              </form>
-            </div>
-          </div>
+    <motion.div 
+      className="mx-auto p-6 bg-white rounded-lg shadow-xl w-[90%] max-w-[1000px] flex justify-center items-center flex-col my-20"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
+      <h1 className="text-4xl font-bold text-gray-800 mb-6">Déjanos tus datos de contacto</h1>
+      
+      <form onSubmit={handleSubmit} className='max-w-[700px] w-[90%]'>
+        <motion.div variants={itemVariants} className="mb-4">
+          <label htmlFor="nombre" className="block text-gray-700 mb-1">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Escribe tu nombre completo"
+            className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 ${errors.nombre ? 'border-red-500 focus:ring-red-200' : 'border-gray-300 focus:ring-blue-200'}`}
+            value={formData.nombre}
+            onChange={handleChange}
+          />
+          {errors.nombre && <p className="text-red-500 text-sm mt-1">{errors.nombre}</p>}
         </motion.div>
-      </div>
-    </section>
+
+        <motion.div variants={itemVariants} className="mb-4">
+          <label htmlFor="celular" className="block text-gray-700 mb-1">Celular</label>
+          <input
+            type="tel"
+            id="celular"
+            name="celular"
+            placeholder="Escribe tu número de celular"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-200"
+            value={formData.celular}
+            onChange={handleChange}
+          />
+        </motion.div>
+
+        <motion.div variants={itemVariants} className="mb-4">
+          <label htmlFor="email" className="block text-gray-700 mb-1">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Escribe tu correo electrónico"
+            className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 ${errors.email ? 'border-red-500 focus:ring-red-200' : 'border-gray-300 focus:ring-blue-200'}`}
+            value={formData.email}
+            onChange={handleChange}
+          />
+          {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+        </motion.div>
+
+        <motion.div variants={itemVariants} className="mb-4">
+          <label htmlFor="carrera" className="block text-gray-700 mb-1">Carrera</label>
+          <input
+            type="text"
+            id="carrera"
+            name="carrera"
+            placeholder="¿De qué carrera necesitas la información?"
+            className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 ${errors.carrera ? 'border-red-500 focus:ring-red-200' : 'border-gray-300 focus:ring-blue-200'}`}
+            value={formData.carrera}
+            onChange={handleChange}
+          />
+          {errors.carrera && <p className="text-red-500 text-sm mt-1">{errors.carrera}</p>}
+        </motion.div>
+
+        <motion.div variants={itemVariants} className="mb-6">
+          <label htmlFor="comentarios" className="block text-gray-700 mb-1">Comentarios</label>
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            placeholder="Escribe tus comentarios"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-200 min-h-[100px]"
+            value={formData.comentarios}
+            onChange={handleChange}
+          />
+        </motion.div>
+
+        <motion.div variants={itemVariants}>
+          <button
+            type="submit"
+            className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          >
+            Enviar
+          </button>
+        </motion.div>
+      </form>
+    </motion.div>
   )
 }
+
+export default ContactForm

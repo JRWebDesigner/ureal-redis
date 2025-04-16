@@ -39,6 +39,7 @@ import AuthoritiesSection from '../components/AuthoritiesSection'
 import PlatformsSection from '../components/PlatformsSection'
 import ProcessSection from '../components/ProcessSection'
 import DiscountSection from '../components/DiscountSection'
+import ContactForm from '../components/ContactForm'
 import Testimonials from '../components/Testimonials'
 import ContactInfo from '../components/ContactInfo'
 import Footer from '../components/Footer'
@@ -56,7 +57,7 @@ export default function Home() {
         <PlatformsSection />
         <ProcessSection />
         <DiscountSection />
-
+        <ContactForm />
         <Testimonials />
         <ContactInfo />
       </main>
