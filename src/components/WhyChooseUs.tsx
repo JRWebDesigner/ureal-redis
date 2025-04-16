@@ -21,6 +21,7 @@ const careers = [
   { title: "Derecho", img: "/carreras/PDerecho.jpg", slug: "/pregrado/derecho" }
 ];
 
+
 const WhyChooseUs = () => {
   return (
     <section className="w-[80%] mx-auto p-8 bg-white text-gray-800 my-9">

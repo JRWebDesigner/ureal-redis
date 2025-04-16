@@ -1,5 +1,7 @@
 'use client'
 
+
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaTiktok } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
@@ -24,17 +26,23 @@ export default function Footer() {
             <p className="text-white/80 mb-6">
               Formando líderes empresariales con educación de calidad y enfoque práctico.
             </p>
-            <div className="flex space-x-4">
-              {[1, 2, 3, 4].map((item) => (
-                <Link 
-                  key={item} 
-                  href="#" 
-                  className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-all"
-                >
-                  {/* Icono de red social */}
-                </Link>
-              ))}
-            </div>
+           <div className="flex space-x-4">
+          {[
+            { icon: <FaFacebook size={20} />, color: 'text-white' },
+            { icon: <FaInstagram size={20} />, color: 'text-white' },
+            { icon: <FaTwitter size={20} />, color: 'text-white' },
+            { icon: <FaYoutube size={20} />, color: 'text-white' },
+            { icon: <FaTiktok size={20} />, color: 'text-white' }
+          ].map((social, index) => (
+            <Link 
+              key={index} 
+              href="#" 
+              className={`w-10 h-10 flex items-center justify-center bg-white/20 rounded-full hover:bg-white/30 transition-all ${social.color}`}
+            >
+              {social.icon}
+            </Link>
+          ))}
+        </div>
           </motion.div>
 
           {[
