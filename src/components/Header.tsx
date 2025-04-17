@@ -16,12 +16,21 @@ type NavLink = {
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
     setMobileMenuOpen(false);
     setOpenSubmenu(null);
   }, [pathname]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const links: NavLink[] = [
     { name: "Tu Universidad", href: "#tuuni" },
@@ -46,24 +55,24 @@ export default function Header() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="fixed top-0 left-0 w-full z-50 bg-gray-900"
+          className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-gray-900 bg-opacity-100 py-1' : 'bg-gray-900 bg-opacity-60 py-4'}`}
           aria-label="Navegación principal"
         >
-          <div className="container mx-auto flex justify-between items-center py-2 px-4">
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="z-50">
+          <div className="container mx-auto flex justify-between items-center px-4 transition-all duration-300">
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="z-50 transition-all duration-300">
               <Link href="/" aria-label="Ir al inicio">
                 <img
                   width={180}
                   height={80}
                   src="/Images/logo.png"
                   alt="Logo Universidad Real de Cámara de Comercio"
-                  className="h-12 w-auto object-contain"
+                  className={`object-contain transition-all duration-300 ${scrolled ? 'h-10' : 'h-16'}`}
                 />
               </Link>
             </motion.div>
 
             {/* Menú Desktop */}
-            <ul className="hidden md:flex gap-4 text-white items-center">
+            <ul className={`hidden md:flex gap-4 text-white items-center transition-all duration-300 ${scrolled ? 'text-base' : 'text-lg'}`}>
               {links.map((link) => (
                 <motion.li
                   key={link.name}
