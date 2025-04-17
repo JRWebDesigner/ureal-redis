@@ -155,7 +155,7 @@ export default function Header() {
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.3 }}
-                className="md:hidden bg-gray-900 text-white overflow-y-auto uppercase fixed top-[10] bottom-0 left-0 right-0 z-40"
+                className="md:hidden bg-gray-900 text-white overflow-y-auto uppercase fixed top-[20px] bottom-0 left-0 right-0 z-40"
               >
                 <ul className="flex flex-col gap-1 py-4 px-4">
                   <div className="border-t border-gray-700 my-2" />
