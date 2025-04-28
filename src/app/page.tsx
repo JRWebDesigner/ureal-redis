@@ -4,9 +4,8 @@ import CarrouselPlanCont from '../components/CarrouselPlanCont'
 import SuccessSection from '../components/SuccessSection'
 import WhyChooseUs from '../components/WhyChooseUs'
 import CoursesSection from '../components/CoursesSection'
-import AuthoritiesSection from '../components/AuthoritiesSection'
 import PlatformsSection from '../components/PlatformsSection'
-import ProcessSection from '../components/ProcessSection'
+import AuthoritiesSection from '../components/AuthoritiesSection'
 import DiscountSection from '../components/DiscountSection'
 import ContactForm from '../components/ContactForm'
 import Testimonials from '../components/Testimonials'
@@ -22,12 +21,12 @@ export default function Home() {
         <SuccessSection />
         <WhyChooseUs />
         <CoursesSection />
-        <AuthoritiesSection />
         <PlatformsSection />
-        <ProcessSection />
+        <AuthoritiesSection />
         <DiscountSection />
-        <ContactForm />
         <Testimonials />
+        <ContactForm />
+        
         <ContactInfo />
       </main>
     </div>

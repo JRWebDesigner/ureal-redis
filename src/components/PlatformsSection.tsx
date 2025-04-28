@@ -72,6 +72,26 @@ export default function PlatformsSection() {
         </div>
       </div>
     </section>
+    <section className="relative bg-[url('/Images/appFondo.jpg')] bg-cover min-h-[100dvh] h-auto md:h-[100dvh] w-full grid md:grid-cols-2 place-items-center px-22 py-16 gap-8">
+        <div className='absolute w-full h-full bg-white opacity-80' />
+        <div className="relative z-20 grid gap-6">
+            <h2 className="font-bold text-3xl md:text-5xl">Aplicación Móvil</h2>
+            <p className='text-xl'>
+                ¡La Universidad da un paso más hacia la innovación! <br/>
+                Presentamos con orgullo nuestra nueva Aplicación Móvil para la comunidad educativa, diseñada para facilitar el acceso a toda tu información académica desde cualquier lugar. <br/>
+                Disponible gratis en App Store y Google Play. <br/>
+                Gestiona tus materias, horarios, calificaciones y mucho más, de forma rápida y segura.</p>
+            <div className="flex gap-10 justify-center md:justify-start items-center">
+                <a href='https://play.google.com/store'>
+                    <img src='/Images/playstore.svg' />
+                </a>
+                <a href='https://www.apple.com/ios/app-store/'>
+                    <img src='/Images/appstore.svg' />
+                </a>
+            </div>
+        </div>
+        <img className='relative z-20' src='/Images/mockup.png' alt='mockup' />
+    </section>
     </>
   )
 }
