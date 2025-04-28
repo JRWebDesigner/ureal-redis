@@ -1,6 +1,5 @@
 "use client"
 import { motion } from 'framer-motion';
-import { FaGraduationCap, FaBusinessTime, FaSyncAlt, FaLightbulb } from 'react-icons/fa';
 
 const features = [
   {
