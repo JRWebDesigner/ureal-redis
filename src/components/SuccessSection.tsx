@@ -58,7 +58,6 @@ export default function SuccessSection() {
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className="flex items-start gap-4 p-4"
             >
-              {feature.icon}
               <div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
