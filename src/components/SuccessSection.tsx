@@ -29,10 +29,10 @@ export default function SuccessSection() {
     <section className="py-12 px-6 max-w-6xl mx-auto">
             
       <div className="grid md:grid-cols-2 gap-10">
-           <div class="grid grid-cols-2 gap-[2%] grid-rows-2">
-  <img src='/Images/exito1.jpg' class="bg-black h-[300px] bg-cover rounded-3xl" />
-  <img src='/Images/exito2.jpg' class="bg-black h-[200px] bg-cover rounded-3xl" />    <img src='/Images/exito3.jpg' class="bg-black h-[200px] bg-cover rounded-3xl" />
-  <img src='/Images/exito4.jpg' class="bg-black h-[200px] bg-cover rounded-3xl" />
+           <div className="grid grid-cols-2 gap-[2%] grid-rows-2">
+  <img src='/Images/exito1.jpg' className="bg-black h-[300px] bg-cover rounded-3xl" />
+  <img src='/Images/exito2.jpg' className="bg-black h-[200px] bg-cover rounded-3xl" />    <img src='/Images/exito3.jpg' className="bg-black h-[200px] bg-cover rounded-3xl" />
+  <img src='/Images/exito4.jpg' className="bg-black h-[200px] bg-cover rounded-3xl" />
 </div>        
 
         {/* Características */}
