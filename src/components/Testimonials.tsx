@@ -9,21 +9,21 @@ import 'swiper/css/pagination'
 const testimonials = [
     {
       id: 1,
-      name: 'María Fernández',
-      comment: 'La universidad me brindó herramientas valiosas para mi desarrollo profesional. Los profesores son excelentes.',
-      image: 'https://us.123rf.com/450wm/jemastock/jemastock1712/jemastock171209574/91945368-dise%C3%B1o-gr%C3%A1fico-del-ejemplo-del-vector-del-icono-del-avatar-del-perfil-de-la-mujer-de-negocios.jpg' // Reemplaza con tus imágenes
+      name: 'Joselin Martinez',
+      comment: 'Estudiar en la Universidad Real ha sido una experiencia transformadora. No solo he adquirido conocimientos actualizados y prácticos, sino que también he sentido un verdadero acompañamiento en mi crecimiento personal y profesional.  ¡Orgullosamente parte de la Universidad Real!"',
+      image: '/Images/foto1.jpg' // Reemplaza con tus imágenes
     },
     {
       id: 2,
-      name: 'Carlos Gutiérrez',
-      comment: 'Excelente ambiente académico. Las instalaciones son modernas y facilitan el aprendizaje.',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36s4sQLOF5bOdIVQ7dAx8BVu8Yf5M6oRJ7nF2Wlgjb-Bq8naMgDI7feBVe2e4Dws4M14&usqp=CAU'
+      name: 'Andres Vasquez',
+      comment: 'Los que me gusta es que la enseñanza es personalizada y hace esto que aprenda bastante, Agradezco el compromiso de los docentes, la innovación en las clases  que distingue a esta institución',
+      image: '/Images/foto2.jpg'
     },
     {
       id: 3,
-      name: 'Ana Rodríguez',
-      comment: 'La atención personalizada y las oportunidades de investigación son lo que más valoro de esta institución.',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwyjrcg3Kot7b9iCnm5cis0n9nKt3Q8JYccvBdU2runPMIhhQ3DtEjAtIjf9Sub5hI_tg&usqp=CAU'
+      name: 'María Quispe',
+      comment: 'Las clases de la universidad son muy amenas  excelentes docentes !!! Felicidades UREAL ',
+      image: '/Images/foto3.jpg'
     }
 ]
 export default function Testimonials() {
@@ -73,7 +73,7 @@ export default function Testimonials() {
             <SwiperSlide key={testimonial.id}>
               {({ isActive }) => (
                 <div className={`h-full p-6 transition-transform duration-300 ${isActive ? 'scale-[1,2]' : 'scale-[1]'}`}>
-                  <div className="bg-white p-8 rounded-lg shadow-md h-full flex flex-col">
+                  <div className="bg-white p-8 rounded-lg shadow-xl h-full flex flex-col">
                     <div className="flex items-center mb-4">
                       <div className="relative w-12 h-12 rounded-full overflow-hidden mr-4">
                         <img 

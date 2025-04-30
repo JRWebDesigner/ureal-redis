@@ -112,18 +112,14 @@ const CourseCarousel = () => {
     </div>
 
     <div>
-      <h3 className="text-xl font-bold mb-2 text-gray-800">Contenidos de Marketing de Excelencia</h3>
-      <p className="text-sm text-gray-700 mb-4">¿Qué aprenderás?</p>
+      <h3 className="text-xl font-bold mb-2 text-gray-800">Taller especializado en: TÉCNICAS DE PROCEDIMIENTO CIVIL</h3>
       <p className="text-sm text-gray-800 mb-4">
-  En un mundo online lleno de información, destacar requiere más que solo palabras en una página. 
-  Nuestro curso <strong>Content Marketing Excellence</strong> va más allá de lo básico, equipándote con el 
-  conocimiento y las habilidades necesarias para crear contenido que se eleve por encima del ruido, 
-  capture la atención y logre tus objetivos de marketing.
+El procedimiento civil en Bolivia es esencial para asegurar la tutela efectiva de derechos, pero su correcta aplicación requiere manejar técnicas procesales que faciliten una conducción eficiente del litigio, una adecuada presentación de pruebas y el cumplimiento de los requisitos legales.
+Días: martes 6 y jueves 8 <br/>
+Horas: De 19:30 a 21:30 <br/>
+Modalidad: Virtual Sincrónico <br/>
+Docente: Abog. Tatiana Flores E. <br/>
 </p>
-
-      <p className="mb-1"><strong>Precio:</strong> Bs. 150</p>
-      <p className="mb-1"><strong>Duración:</strong> 1 mes</p>
-      <p className="mb-4"><strong>Docente:</strong> Especialista en Marketing Digital</p>
       <Link href="#inscripcion" className="inline-flex items-center text-blue-600 hover:underline font-medium">
         Inscríbete <FaChevronRight className="ml-2" />
       </Link>

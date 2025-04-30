@@ -8,6 +8,7 @@ import PlatformsSection from '../components/PlatformsSection'
 import AuthoritiesSection from '../components/AuthoritiesSection'
 import DiscountSection from '../components/DiscountSection'
 import ContactForm from '../components/ContactForm'
+import NoticiasCarrusel from '../components/NoticiasCarrusel'
 import Testimonials from '../components/Testimonials'
 import ContactInfo from '../components/ContactInfo'
 
@@ -24,6 +25,7 @@ export default function Home() {
         <PlatformsSection />
         <AuthoritiesSection />
         <DiscountSection />
+        <NoticiasCarrusel />
         <Testimonials />
         <ContactForm />
         
