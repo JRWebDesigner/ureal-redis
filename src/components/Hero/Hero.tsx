@@ -38,7 +38,7 @@ export default function HeroSection() {
               Inscríbete !!!
             </Link>
             <Link 
-              href="#carreras" 
+              href="/carreras" 
               className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-all"
             >
               Carreras

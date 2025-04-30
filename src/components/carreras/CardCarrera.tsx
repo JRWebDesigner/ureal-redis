@@ -1,0 +1,23 @@
+interface CardCarreraProps {
+  id: string;
+  carrera: string;
+  imagen: string;
+  descripcion: string;
+}
+
+export default function CardCarrera({ id, carrera, imagen, descripcion }: CardCarreraProps) {
+  return(
+    <div className="rounded-3xl shadow-2xl w-[340px] h-[610px] grid">
+      <div className="rounded-t-3xl relative bg-cover w-full h-[340px]"
+  style={{ backgroundImage: `url(/Images/${imagen}.jpg)` }}>
+        <span className="absolute bg-blue-600 px-5 py-3 rounded-2xl top-4 -left-4 text-white text-xl font-bold">{carrera}</span>
+        <span className="absolute bottom-3 left-3 text-7xl text-white font-bold">{id}</span>
+      </div>
+      <div className="p-5 text-center text-gray-700 text-[1rem]">
+        <p>
+          {descripcion}
+        </p>
+      </div>
+    </div>
+  )
+}

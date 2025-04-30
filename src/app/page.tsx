@@ -1,4 +1,3 @@
-import Header from '../components/Header'
 import Hero from '../components/Hero/Hero'
 import CarrouselPlanCont from '../components/CarrouselPlanCont'
 import SuccessSection from '../components/SuccessSection'
@@ -15,7 +14,6 @@ import ContactInfo from '../components/ContactInfo'
 export default function Home() {
   return (
     <div className="bg-white">
-      <Header />
       <main>
         <Hero />
         <CarrouselPlanCont />
@@ -28,7 +26,6 @@ export default function Home() {
         <NoticiasCarrusel />
         <Testimonials />
         <ContactForm />
-        
         <ContactInfo />
       </main>
     </div>

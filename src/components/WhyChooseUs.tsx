@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
             <li className="flex  flex-col md:flex-row items-center gap-2"><FaCertificate  className='text-primary'/> Certificación reconocida que valida tus habilidades</li>
             <li className="flex  flex-col md:flex-row items-center gap-2"><FaChartLine  className='text-primary'/> Habilidades prácticas de marketing para obtener mejores resultados</li>
           </ul>
-          <Link href="#inscripcion" className="mx-auto w-[200px] mt-22 px-6 py-2 cursor-pointer bg-gradient-to-b from-secondary to-primary text-white rounded-full shadow hover:bg-blue-700">
+          <Link href="/carreras" className="mx-auto w-[200px] mt-22 px-6 py-2 cursor-pointer bg-gradient-to-b from-secondary to-primary text-white rounded-full shadow hover:bg-blue-700">
             Carreras
           </Link>
         </div>
