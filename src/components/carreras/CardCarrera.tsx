@@ -1,8 +1,5 @@
 "use client"
-<<<<<<< HEAD
-=======
 import Link from 'next/link'
->>>>>>> fa6828f (carreras)
 import { motion } from "framer-motion";
 
 interface CardCarreraProps {
@@ -14,10 +11,7 @@ interface CardCarreraProps {
 
 export default function CardCarrera({ id, carrera, imagen, descripcion }: CardCarreraProps) {
   return(
-<<<<<<< HEAD
-=======
     <Link href={`/carreras/${imagen}`}>
->>>>>>> fa6828f (carreras)
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -30,21 +24,14 @@ export default function CardCarrera({ id, carrera, imagen, descripcion }: CardCa
         <span className="absolute bottom-3 left-3 text-7xl text-white font-bold">{id}</span>
       </div>
       <div className="p-5 text-center text-gray-700 text-[1rem]">
-<<<<<<< HEAD
-        <p>
-=======
         <p className='font-semibold'>
->>>>>>> fa6828f (carreras)
           {carrera} 
           <br/>
           {descripcion}
         </p>
       </div>
     </motion.div>
-<<<<<<< HEAD
-=======
     </Link>
->>>>>>> fa6828f (carreras)
   )
 }
 

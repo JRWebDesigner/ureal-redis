@@ -29,13 +29,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-<<<<<<< HEAD
-        {children}
-=======
         <main>
           {children}
         </main>
->>>>>>> fa6828f (carreras)
         <Footer />
       </body>
     </html>

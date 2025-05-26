@@ -42,17 +42,10 @@ export default function NotFound() {
 
   // Sugerencias de búsqueda
   const searchSuggestions = [
-<<<<<<< HEAD
-    { label: 'Admisiones', path: '/admisiones' },
-    { label: 'Contacto', path: '/contacto' },
-    { label: 'Carreras', path: '/carreras' },
-    { label: 'Noticias', path: '/noticias' }
-=======
     { label: 'Inicio', path: '/' },
     { label: 'Carreras', path: '/carreras' },
     { label: 'Formacion', path: '/#formacion' },
     { label: 'Servicios', path: '/#servicios' }
->>>>>>> fa6828f (carreras)
   ];
 
   return (
@@ -85,11 +78,8 @@ export default function NotFound() {
                 className="flex justify-center mb-4"
                 whileHover={{ rotate: 10 }}
               >
-<<<<<<< HEAD
                 <FiAlertTriangle className="h-12 w-12 text-[#800020]" />
-=======
                 <FiAlertTriangle className="h-12 w-12 text-primary" />
->>>>>>> fa6828f (carreras)
               </motion.div>
               <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
                 Página no encontrada
@@ -131,33 +121,12 @@ export default function NotFound() {
             >
               <button
                 onClick={() => router.push('/')}
-<<<<<<< HEAD
-                className="group relative w-full flex justify-center items-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#800020] hover:bg-[#600018] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#800020]"
-=======
                 className="group relative w-full flex justify-center items-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#800020]"
->>>>>>> fa6828f (carreras)
               >
                 <FiHome className="mr-2 h-5 w-5 text-white group-hover:text-white" />
                 Ir al inicio
               </button>
             </motion.div>
-<<<<<<< HEAD
-
-            <motion.div
-              className="md:col-span-2"
-              whileHover={hoverEffect}
-              whileTap={tapEffect}
-            >
-              <button
-                onClick={() => router.push('/mapa-del-sitio')}
-                className="group relative w-full flex justify-center items-center py-3 px-4 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#800020]"
-              >
-                <FiCompass className="mr-2 h-5 w-5 text-[#800020] group-hover:text-[#600018]" />
-                Ver mapa del sitio
-              </button>
-            </motion.div>
-=======
->>>>>>> fa6828f (carreras)
           </div>
         </motion.div>
 

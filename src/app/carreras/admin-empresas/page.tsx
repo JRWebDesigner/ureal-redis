@@ -1,6 +1,7 @@
 "use client"
 import Hero2 from '@/components/carreras/Hero2'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function PageAdmEmpresas(){
   return(
@@ -58,13 +59,100 @@ export default function PageAdmEmpresas(){
           </div>        
         </div>     
       </section>
-      <section className='text-center my-16'>
-        <h2 className='text-4xl font-bold'> Perfil  del Profesional en Administración de Empresas</h2>
-        <p className='max-w-6xl mx-auto opacity-80'>
+      <section className='my-16'>
+        <h2 className='text-4xl font-bold text-center'> Perfil  del Profesional en Administración de Empresas</h2>
+        <p className='max-w-6xl mx-auto opacity-80 text-center'>
           El profesional en Administración de Empresas está capacitado para gestionar eficientemente los recursos humanos, financieros y materiales de una organización, aplicando principios éticos y estratégicos para alcanzar los objetivos empresariales en un entorno competitivo y globalizado.
-        </p> 
-        
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 text-[#1d1d1b]">
+      <div className="p-8">
+        <div className="border-l-2 border-primary pl-4">
+          <h3 className="font-bold text-lg">Planificación y Dirección Estratégica</h3>
+          <p className="text-sm mt-2">
+            Diseña y ejecuta planes estratégicos que alinean los objetivos organizacionales
+            con las oportunidades del mercado, asegurando el crecimiento y sostenibilidad de la empresa.
+          </p>
+        </div>
+      </div>
+      <div className="p-8 border-t md:border-t-0 md:border-l border-[#e0e0e0] bg-[#fffaf7]">
+        <div className="border-l-2 border-primary pl-4">
+          <h3 className="font-bold text-lg">Gestión Financiera y Administrativa</h3>
+          <p className="text-sm mt-2">
+            Administra los recursos financieros mediante la elaboración de presupuestos,
+            análisis de costos y evaluación de inversiones, optimizando la rentabilidad y eficiencia operativa.
+          </p>
+        </div>
+      </div>
+      <div className="p-8">
+        <div className="border-l-2 border-primary pl-4">
+          <h3 className="font-bold text-lg">Liderazgo y Gestión del Talento Humano</h3>
+          <p className="text-sm mt-2">
+            Desarrolla habilidades de liderazgo para motivar equipos, gestionar el talento humano
+            y fomentar un ambiente laboral productivo y ético.
+          </p>
+        </div>
+      </div>
+      <div className="p-8 border-t md:border-l border-[#e0e0e0] bg-[#fffaf7]">
+        <div className="border-l-2 border-primary pl-4">
+          <h3 className="font-bold text-lg">Innovación y Adaptabilidad Organizacional</h3>
+          <p className="text-sm mt-2">
+            Implementa procesos innovadores y se adapta a los cambios del entorno empresarial,
+            promoviendo la mejora continua y la competitividad de la organización.
+          </p>
+        </div>
+      </div>
+    </div>
       </section>
+          <div className="bg-dark text-white py-12 px-4 md:px-16">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+        <div>
+          <img src="/ruta/icono3.png" alt="Ícono prácticas" className="mx-auto mb-4 w-12 h-12" />
+          <h3 className="text-lg font-bold mb-2">Prácticas y Experiencia Laboral</h3>
+          <p className="text-sm mb-4">
+            La inclusión de la Práctica Empresarial en el plan curricular posibilita que los estudiantes
+            se inserten en entornos reales de comercio internacional, aplicando lo aprendido en situaciones concretas
+          </p>
+          <a href="#" className="text-blue-400 hover:underline inline-flex items-center gap-1">
+            Learn more <span className="text-sm">➔</span>
+          </a>
+        </div>
+        <div>
+          {/* Cambia esta ruta al PNG correspondiente */}
+          <img src="/ruta/icono2.png" alt="Ícono plan" className="mx-auto mb-4 w-12 h-12" />
+          <h3 className="text-lg font-bold mb-2">Plan de estudios y Menciones</h3>
+          <p className="text-sm mb-4">
+            Animated videos may be one of the keys to the success of your business. Our top-ranked cartoonist
+            will deliver high-quality services at an affordable price. We also offer animation solutions like 2D
+            animation and 3D modeling.
+          </p>
+          <a href="#" className="text-blue-400 hover:underline inline-flex items-center gap-1">
+            Learn more <span className="text-sm">➔</span>
+          </a>
+        </div>
+        <div>
+          {/* Cambia esta ruta al PNG correspondiente */}
+          <img src="/ruta/icono3.png" alt="Ícono malla" className="mx-auto mb-4 w-12 h-12" />
+          <h3 className="text-lg font-bold mb-2">Malla Curricular</h3>
+          <p className="text-sm mb-4">
+            Professional photography services for your website and marketing use. Our creative artists will
+            produce incredible authentic images so you can present your business in the best light. The service
+            includes photo editing.
+          </p>
+          <a href="#" className="text-blue-400 hover:underline inline-flex items-center gap-1">
+            Learn more <span className="text-sm">➔</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <section className='my-16'>
+      <h2 className='text-4xl font-bold text-center'>Internacionalízate: Actividades para Conectar y Crecer</h2>
+      <div className='flex justify-center items-center gap-10'>
+        <img src='/carreras/admin-empresas/img3.jpg' className='rounded-3xl max-w-[300px]' />
+        <img src='/carreras/admin-empresas/img4.jpg' className='rounded-3xl max-w-[300px]' />
+        <img src='/carreras/admin-empresas/img5.jpg' className='rounded-3xl max-w-[300px]' />
+        <img src='/carreras/admin-empresas/img6.jpg' className='rounded-3xl max-w-[300px]' />
+      </div>
+    </section>
     </>
   )
 }
