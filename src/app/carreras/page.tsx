@@ -5,11 +5,19 @@ import SeccionFacultadTecnologica from '@/components/carreras/SeccionFacultadTec
 
 export default function CarrerasPage(){
   return(
+<<<<<<< HEAD
     <main>
+=======
+    <>
+>>>>>>> fa6828f (carreras)
       <Hero />
       <SeccionFacultadEconomica />
       <SeccionFacultadSociales />
       <SeccionFacultadTecnologica />
+<<<<<<< HEAD
     </main>
+=======
+    </>
+>>>>>>> fa6828f (carreras)
   )
 }

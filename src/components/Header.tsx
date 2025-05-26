@@ -34,7 +34,11 @@ export default function Header() {
 
   const links: NavLink[] = [
     { name: "Tu Universidad", href: "#tuuni" },
+<<<<<<< HEAD
     { name: "Foramcion", href: "#formacion" },
+=======
+    { name: "Formacion", href: "#formacion" },
+>>>>>>> fa6828f (carreras)
     { name: "Extension", href: "#extencion" },
     { name: "Servicios", href: "#servicios" },
     { name: "Enlaces", href: "#enlaces" },
