@@ -2,6 +2,7 @@
 import Hero2 from '@/components/carreras/Hero2'
 import Link from 'next/link'
 import Image from 'next/image'
+import styles from '../textofondo.module.css'
 
 export default function PageAdmEmpresas(){
   return(
@@ -106,53 +107,70 @@ export default function PageAdmEmpresas(){
           <div className="bg-dark text-white py-12 px-4 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
         <div>
-          <img src="/ruta/icono3.png" alt="Ícono prácticas" className="mx-auto mb-4 w-12 h-12" />
+          <img src="/carreras/admin-empresas/icono1.png" alt="Ícono prácticas" className="mx-auto mb-4 w-12 h-12" />
           <h3 className="text-lg font-bold mb-2">Prácticas y Experiencia Laboral</h3>
           <p className="text-sm mb-4">
             La inclusión de la Práctica Empresarial en el plan curricular posibilita que los estudiantes
             se inserten en entornos reales de comercio internacional, aplicando lo aprendido en situaciones concretas
           </p>
-          <a href="#" className="text-blue-400 hover:underline inline-flex items-center gap-1">
-            Learn more <span className="text-sm">➔</span>
-          </a>
         </div>
         <div>
           {/* Cambia esta ruta al PNG correspondiente */}
-          <img src="/ruta/icono2.png" alt="Ícono plan" className="mx-auto mb-4 w-12 h-12" />
+          <img src="/carreras/admin-empresas/icono2.png" alt="Ícono plan" className="mx-auto mb-4 w-12 h-12" />
           <h3 className="text-lg font-bold mb-2">Plan de estudios y Menciones</h3>
           <p className="text-sm mb-4">
             Animated videos may be one of the keys to the success of your business. Our top-ranked cartoonist
             will deliver high-quality services at an affordable price. We also offer animation solutions like 2D
             animation and 3D modeling.
           </p>
-          <a href="#" className="text-blue-400 hover:underline inline-flex items-center gap-1">
-            Learn more <span className="text-sm">➔</span>
-          </a>
         </div>
         <div>
           {/* Cambia esta ruta al PNG correspondiente */}
-          <img src="/ruta/icono3.png" alt="Ícono malla" className="mx-auto mb-4 w-12 h-12" />
+          <img src="/carreras/admin-empresas/icono3.png" alt="Ícono malla" className="mx-auto mb-4 w-12 h-12" />
           <h3 className="text-lg font-bold mb-2">Malla Curricular</h3>
           <p className="text-sm mb-4">
             Professional photography services for your website and marketing use. Our creative artists will
             produce incredible authentic images so you can present your business in the best light. The service
             includes photo editing.
           </p>
-          <a href="#" className="text-blue-400 hover:underline inline-flex items-center gap-1">
-            Learn more <span className="text-sm">➔</span>
-          </a>
         </div>
       </div>
     </div>
     <section className='my-16'>
-      <h2 className='text-4xl font-bold text-center'>Internacionalízate: Actividades para Conectar y Crecer</h2>
-      <div className='flex justify-center items-center gap-10'>
-        <img src='/carreras/admin-empresas/img3.jpg' className='rounded-3xl max-w-[300px]' />
-        <img src='/carreras/admin-empresas/img4.jpg' className='rounded-3xl max-w-[300px]' />
-        <img src='/carreras/admin-empresas/img5.jpg' className='rounded-3xl max-w-[300px]' />
-        <img src='/carreras/admin-empresas/img6.jpg' className='rounded-3xl max-w-[300px]' />
+      <h2 className='text-4xl font-bold text-center mb-8'>Internacionalízate: Actividades para Conectar y Crecer</h2>
+      <div className='flex justify-center items-center gap-10 px-16'>
+        <img src='/carreras/admin-empresas/img3.jpg' className='rounded-3xl w-[670px] h-[670px] object-cover' />
+        <div className='flex justify-around md:grid grid-cols-2 grid-rows-2 items-center gap-10 flex-wrap'>
+          <img src='/carreras/admin-empresas/img4.jpg' className='rounded-3xl min-w-[90%] max-w-[300px] h-[300px] object-cover' />
+          <img src='/carreras/admin-empresas/img5.jpg' className='rounded-3xl min-w-[90%] max-w-[300px] h-[300px] object-cover' />
+          <img src='/carreras/admin-empresas/img6.jpg' className='rounded-3xl min-w-[90%] max-w-[300px] h-[300px] object-cover' />
+          <img src='/carreras/admin-empresas/img7.jpg' className='rounded-3xl min-w-[90%] max-w-[300px] h-[300px] object-cover' />
+        </div>
       </div>
     </section>
+    <section>
+      <h2 className={`${styles.textoConImagen} text-8xl text-center`}>Has Real Proyecto</h2>
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 mt-10">
+        <div className="text-primary font-bold text-2xl leading-tight w-full md:w-1/3">
+          <p>Has tus proyectos y</p>
+          <p>aprende a</p>
+          <p>emprender</p>
+        </div>
+        <div className=" text-[#555] w-full md:w-2/3 space-y-2">
+          <p>
+            Aquí en la U Real no solo aprenderás como administrar una organización, sino también como crear tu propia empresa,
+            además de conocer lugares que enriquecerán tu espíritu emprendedor.
+          </p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Convertirás tu idea de negocio en realidad, exponiéndolos en ferias.</li>
+            <li>Pondrás en práctica tus habilidades blandas.</li>
+            <li>Visitas a distintos lugares.</li>
+            <li>Prácticas empresariales</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
     </>
   )
 }

@@ -14,10 +14,6 @@ import ContactInfo from '../components/ContactInfo'
 export default function Home() {
   return (
     <div className="bg-white">
-<<<<<<< HEAD
-      <main>
-=======
->>>>>>> fa6828f (carreras)
         <Hero />
         <CarrouselPlanCont />
         <SuccessSection />
@@ -30,10 +26,6 @@ export default function Home() {
         <Testimonials />
         <ContactForm />
         <ContactInfo />
-<<<<<<< HEAD
-      </main>
-=======
->>>>>>> fa6828f (carreras)
     </div>
   )
 }
