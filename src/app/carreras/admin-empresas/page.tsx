@@ -1,7 +1,6 @@
 "use client"
 import Hero2 from '@/components/carreras/Hero2'
 import Link from 'next/link'
-import Image from 'next/image'
 import styles from '../textofondo.module.css'
 
 export default function PageAdmEmpresas(){

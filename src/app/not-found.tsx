@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FiArrowLeft, FiHome, FiAlertTriangle, FiCompass } from 'react-icons/fi';
+import { FiArrowLeft, FiHome, FiAlertTriangle } from 'react-icons/fi';
 import { useRouter } from 'next/navigation';
 
 export default function NotFound() {
