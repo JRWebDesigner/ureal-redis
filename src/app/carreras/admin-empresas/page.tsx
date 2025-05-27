@@ -181,7 +181,7 @@ export default function PageAdmEmpresas(){
            className='max-w-6xl flex flex-col gap-7 text-white'
          >
           <motion.h2 
-            className='text-5xl'
+            className='text-4xl md:text-5xl'
             variants={itemVariants}
           >
             ADMINISTRACIÓN DE EMPRESAS
@@ -527,7 +527,7 @@ export default function PageAdmEmpresas(){
         >
           <motion.img 
             src='/carreras/admin-empresas/img3.jpg' 
-            className='rounded-3xl w-[670px] h-[670px] object-cover'
+            className='rounded-3xl min-w-[80%] h-[330px] md:w-[670px] md:h-[670px] object-cover'
             variants={slideInFromLeft}
             whileHover={{ scale: 1.02 }}
           />
