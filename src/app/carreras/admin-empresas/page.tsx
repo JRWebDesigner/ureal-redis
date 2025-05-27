@@ -283,7 +283,7 @@ export default function PageAdmEmpresas(){
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeIn}
-        className='my-16'
+        className='my-16 px-7'
       >
         <motion.h2 
           className='text-4xl font-bold text-center'
@@ -513,7 +513,7 @@ export default function PageAdmEmpresas(){
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeIn}
-        className='my-16'
+        className='my-16 px-7'
       >
         <motion.h2 
           className='text-4xl font-bold text-center mb-8'
@@ -556,7 +556,7 @@ export default function PageAdmEmpresas(){
         variants={fadeIn}
       >
         <motion.h2 
-          className={`${styles.textoConImagen} text-8xl text-center`}
+          className={`${styles.textoConImagen} text-5xl md:text-8xl text-center`}
           variants={itemVariants}
         >
           Has Real Proyecto
