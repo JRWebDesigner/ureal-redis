@@ -44,11 +44,6 @@ const slideInFromRight = {
   visible: { x: 0, opacity: 1, transition: { duration: 0.6 } }
 }
 
-const scaleUp = {
-  hidden: { scale: 0.9, opacity: 0 },
-  visible: { scale: 1, opacity: 1, transition: { duration: 0.5 } }
-}
-
 export default function PageAdmEmpresas(){
   const [showModal, setShowModal] = useState(false)
   const [semestreSeleccionado, setSemestreSeleccionado] = useState(0)
@@ -555,7 +550,7 @@ export default function PageAdmEmpresas(){
       
       <motion.section
         initial="hidden"
-        className='px-10 max-w-6xl'
+        className='px-10 max-w-6xl mx-auto mb-7'
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeIn}
