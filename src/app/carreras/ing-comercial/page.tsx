@@ -47,112 +47,110 @@ const slideInFromRight = {
 export default function PageCarrera(){
   const [showModal, setShowModal] = useState(false)
   const [semestreSeleccionado, setSemestreSeleccionado] = useState(0)
-
   const semestres = [
-    {
-      nombre: "Primer Semestre",
-      materias: [
-        { codigo: "MAT100-1", nombre: "Matemáticas I" },
-        { codigo: "LEN100-1", nombre: "Lenguaje y Redacción en Español" },
-        { codigo: "MET100-1", nombre: "Metodos y Tecnicas de Estudio" },
-        { codigo: "ADM100-1", nombre: "Administracion" },
-        { codigo: "CON100-1", nombre: "Contabilidad Basica" },
-        { codigo: "ECO100-1", nombre: "Principios de Microeconomia" },
-        { codigo: "ENG100-1", nombre: "Inglés I" }
-      ]
-    },
-    {
-      nombre: "Segundo Semestre",
-      materias: [
-        { codigo: "DER101-2", nombre: "Derecho Comercial y Administrativo" },
-        { codigo: "ECO101-2", nombre: "Principios de Macroeconomía" },
-        { codigo: "MAT101-2", nombre: "Matemáticas II" },
-        { codigo: "ADM101-2", nombre: "Adminitración II" },
-        { codigo: "CON101-2", nombre: "Contabilidad Intermedia" },
-        { codigo: "PSI101-2", nombre: "Psicologia Organizacional" },
-        { codigo: "ENG101-2", nombre: "Inglés II" }
-      ]
-    },
-    {
-      nombre: "Tercer Semestre",
-      materias: [
-        { codigo: "COM101-3", nombre: "Computacion para la Administracion" },
-        { codigo: "CON102-3", nombre: "Contabilidad de Costos" },
-        { codigo: "FIN101-3", nombre: "Finanzas I" },
-        { codigo: "GES100-3", nombre: "Gestion de Proyectos" },
-        { codigo: "CDA101-3", nombre: "Estadistica Adminitrativa" },
-        { codigo: "DRE101-3", nombre: "Desarrollo de Emprendedores" },
-        { codigo: "ENG102-3", nombre: "Inglés III" }
-      ]
-    },
-     {
-      nombre: "Cuarto Semestre",
-      materias: [
-        { codigo: "RHH101-4", nombre: "Recursos Humanos" },
-        { codigo: "FIN102-4", nombre: "Finanzas II" },
-        { codigo: "PSI102-4", nombre: "Desarrollo Organizacional" },
-        { codigo: "LI100-4", nombre: "Liderazgo Empresarial" },
-        { codigo: "MER101-4", nombre: "Mercadotecnia I" },
-        { codigo: "CDA102-4", nombre: "Tec. Cuan. para la Toma de Decisiones" },
-        { codigo: "ENG103-4", nombre: "Inglés IV" }
-      ]
-    },
-    {
-      nombre: "Quinto Semestre",
-      materias: [
-        { codigo: "LI102-5", nombre: "Innovación Empresarial" },
-        { codigo: "CDA103-5", nombre: "Análisis de Decisiones I" },
-        { codigo: "ADC103-5", nombre: "Análisis del Consumidor" },
-        { codigo: "PSI103-5", nombre: "Administración de la Producción" },
-        { codigo: "ADF103-5", nombre: "Administración Financiera" },
-        { codigo: "LI103-5", nombre: "Pensamiento Estratégicos" },
-        { codigo: "ENG104-5", nombre: "Inglés V" }
-      ]
-    },
-    {
-      nombre: "Sexto Semestre",
-      materias: [
-        { codigo: "ORO100-6", nombre: "Dirección Estratégica I" },
-        { codigo: "CDA104-6", nombre: "Análisis de Decisiones II" },
-        { codigo: "DER102-6", nombre: "Derecho de Trabajo" },
-        { codigo: "IDM104-6", nombre: "Investigacion de Mercados I" },
-        { codigo: "RHH102-6", nombre: "Gest. Estratégica de RRHH" },
-        { codigo: "CON104-6", nombre: "Presupuestos" },
-        { codigo: "ENG105-6", nombre: "Inglés VI" }
-      ]
-    },
-    {
-      nombre: "Séptimo Semestre",
-      materias: [
-        { codigo: "ORO101-7", nombre: "Dirección Estratégica II" },
-        { codigo: "FEP104-7", nombre: "Formulacion y Evaluacion de Proyectos" },
-        { codigo: "PSI104-7", nombre: "Gerencia de Calidad" },
-        { codigo: "AIF104-7", nombre: "Análisis e Interpretación de Estados Financieros" },
-        { codigo: "GPU107-7", nombre: "Gestión Pública" },
-        { codigo: "VEP107-7", nombre: "Valores en el Ejercicio Profesional" },
-        { codigo: "SDG107-7", nombre: "Seminario de Grado I" }
-      ]
-    },
-    {
-      nombre: "Octavo Semestre",
-      materias: [
-        { codigo: "SDG108-8", nombre: "Seminario de Grado II" },
-        { codigo: "PRE108-8", nombre: "Practica Empresarial" }
-      ]
-    },
-    {
-      nombre: "Materias Complementarias",
-      materias: [
-        { codigo: "INA100", nombre: "Idioma Nativo (Aymara o Quechua)" },
-        { codigo: "IDM105", nombre: "Investigación de Mercados II" },
-        { codigo: "PEE101", nombre: "Politica y Estrategia Empresarial" },
-        { codigo: "ECO102-4", nombre: "Economía Financiera" }
-      ]
-    }
-  ]
+  {
+    nombre: "Primer Semestre",
+    materias: [
+      { codigo: "ADM100-1", nombre: "Administración" },
+      { codigo: "MET100-1", nombre: "Métodos y Técnicas de Estudio" },
+      { codigo: "MAT100-1", nombre: "Matemáticas" },
+      { codigo: "CON100-1", nombre: "Contabilidad Básica" },
+      { codigo: "ECO100-1", nombre: "Principios de Microeconomía" },
+      { codigo: "LEN100-1", nombre: "Lenguaje y Redacción en Español" },
+      { codigo: "ENG100-1", nombre: "Inglés I" }
+    ]
+  },
+  {
+    nombre: "Segundo Semestre",
+    materias: [
+      { codigo: "ADM101-2", nombre: "Administración II" },
+      { codigo: "DER101-2", nombre: "Derecho Comercial y Administrativo" },
+      { codigo: "MAT101-2", nombre: "Matemáticas II" },
+      { codigo: "CON101-2", nombre: "Contabilidad Intermedia" },
+      { codigo: "ECO101-2", nombre: "Principios de Macroeconomía" },
+      { codigo: "PSI101-2", nombre: "Psicología Organizacional" },
+      { codigo: "ENG101-2", nombre: "Inglés II" }
+    ]
+  },
+  {
+    nombre: "Tercer Semestre",
+    materias: [
+      { codigo: "COM101-3", nombre: "Computación para la Administración" },
+      { codigo: "CDA101-3", nombre: "Estadística Administrativa" },
+      { codigo: "CON102-3", nombre: "Contabilidad de Costos" },
+      { codigo: "MER101-3", nombre: "Mercadotecnia I" },
+      { codigo: "DRE101-3", nombre: "Desarrollo de Emprendedores" },
+      { codigo: "MFI102-3", nombre: "Matemática Financiera" },
+      { codigo: "ENG102-3", nombre: "Inglés III" }
+    ]
+  },
+  {
+    nombre: "Cuarto Semestre",
+    materias: [
+      { codigo: "RHH101-4", nombre: "Recursos Humanos" },
+      { codigo: "AIF104-4", nombre: "Análisis e Interpretación de Estados Financieros" },
+      { codigo: "MER102-4", nombre: "Mercadotecnia II" },
+      { codigo: "ADV101-4", nombre: "Administración de Ventas" },
+      { codigo: "IDM104-4", nombre: "Investigación de Mercados I" },
+      { codigo: "CDA102-4", nombre: "Tec. Cuan. para la Toma de Decisiones" },
+      { codigo: "ENG103-4", nombre: "Inglés IV" }
+    ]
+  },
+  {
+    nombre: "Quinto Semestre",
+    materias: [
+      { codigo: "DPM101-5", nombre: "Desarrollo de productos" },
+      { codigo: "CDA103-5", nombre: "Análisis de Decisiones I" },
+      { codigo: "ADC106-5", nombre: "Análisis del Consumidor" },
+      { codigo: "MDS105-5", nombre: "Mercadotecnia de Servicios" },
+      { codigo: "ADF105-5", nombre: "Administración Financiera" },
+      { codigo: "CDA104-5", nombre: "Administración de Operaciones" },
+      { codigo: "ENG104-5", nombre: "Inglés V" }
+    ]
+  },
+  {
+    nombre: "Sexto Semestre",
+    materias: [
+      { codigo: "PDV102-6", nombre: "Proceso de Ventas" },
+      { codigo: "DPM102-6", nombre: "Sistemas de Investigación de Mercados" },
+      { codigo: "CEL102-6", nombre: "Comercio Electronico e-commerce" },
+      { codigo: "IDM105-6", nombre: "Investigación de Mercados II" },
+      { codigo: "PUB107-6", nombre: "Publicidad I" },
+      { codigo: "MER103-6", nombre: "Mercadotecnia III" },
+      { codigo: "ENG105-6", nombre: "Inglés VI" }
+    ]
+  },
+  {
+    nombre: "Séptimo Semestre",
+    materias: [
+      { codigo: "IDM106-7", nombre: "Seminario de Investigación de Mercados" },
+      { codigo: "FEP104-7", nombre: "Formulación y Evaluación de Proyectos" },
+      { codigo: "PUB108-7", nombre: "Publicidad II" },
+      { codigo: "PDV104-7", nombre: "Seminario de Promoción" },
+      { codigo: "MDI107-7", nombre: "Marketing Digital" },
+      { codigo: "VEP107-7", nombre: "Valores en el Ejercicio Profesional" },
+      { codigo: "SDG107-7", nombre: "Seminario de Grado I" }
+    ]
+  },
+  {
+    nombre: "Octavo Semestre",
+    materias: [
+      { codigo: "SDG108-8", nombre: "Seminario de Grado II" },
+      { codigo: "PRE108-8", nombre: "Práctica Empresarial" }
+    ]
+  },
+  {
+    nombre: "Materias Complementarias",
+    materias: [
+      { codigo: "INA100", nombre: "Idioma Nativo (Aymara o Quechua)" },
+      { codigo: "MER104-7", nombre: "Seminario Avanzado de Mercadotecnia" },
+      { codigo: "ECO106", nombre: "Economía Internacional" }
+    ]
+  }
+];
   return(
     <>
-      <Hero2 titulo="Sé el cambio en el mundo empresarial. Ingeniería Comercial con visión nacional e internacional"/>
+      <Hero2 titulo="Sé el cambio en el mundo empresarial. Ingeniería Comercial con visión nacional e internacional."/>
       
       <motion.section 
         initial="hidden"
@@ -166,12 +164,12 @@ export default function PageCarrera(){
            className='relative flex justify-center items-center mb-5'
          >
             <motion.img 
-              src='/carreras/admin-empresas/img1.png' 
+              src='/carreras/comercio/img1.png' 
               className='relative z-20 rounded-3xl h-[400px] md:h-[500px] max-w-1/2 object-cover'
               whileHover={{ scale: 1.02 }}
             />
             <motion.img 
-              src='/carreras/admin-empresas/img2.png' 
+              src='/carreras/comercio/img2.png' 
               className='-ml-22 rounded-3xl h-[470px] md:h-[570px] max-w-1/2 object-cover'
               whileHover={{ scale: 1.02 }}
             />
@@ -184,7 +182,7 @@ export default function PageCarrera(){
             className='text-4xl md:text-5xl'
             variants={itemVariants}
           >
-            ADMINISTRACIÓN DE EMPRESAS
+            INGENIERÍA COMERCIAL
           </motion.h2>
           <motion.div 
             className="pl-4 border-l-2 border-white flex flex-col gap-7"
@@ -194,9 +192,9 @@ export default function PageCarrera(){
               className="opacity-70"
               variants={itemVariants}
             >
-              En un mundo empresarial cada vez más dinámico y globalizado, la carrera de Administración de Empresas se posiciona como una de las opciones más estratégicas para quienes buscan liderar organizaciones con visión de futuro.
-              <br /><br />
-              La Universidad Real de la Cámara Nacional de Comercio ofrece una formación integral que prepara a los estudiantes para enfrentar los desafíos del entorno empresarial actual y contribuir al desarrollo económico y social de la región.
+              Una  buena opción  para estudiar Ingeniería Comercial es que te prepara para convertir ideas en negocios reales, combinando visión estratégica, liderazgo y habilidades financieras. Esta carrera te da las herramientas para crear, dirigir y transformar empresas, tanto a nivel nacional como internacional.
+<br /><br />
+Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de Comercio, tiene contacto directo con el sector empresarial desde el primer día, lo que aumenta tus oportunidades laborales y tu impacto profesional.
             </motion.p>
             <motion.h3 
               className="text-3xl text-semibold"
@@ -209,9 +207,9 @@ export default function PageCarrera(){
               variants={itemVariants}
             >
               🔹 Misión:<br />
-               La carrera de Administración de Empresas en la UReal tiene como misión formar profesionales emprendedores, altamente competitivos y solidarios, capaces de analizar, comprender y transformar la realidad de sus entornos. A través de la investigación continua, la ciencia y la tecnología, los estudiantes adquieren conocimientos y desarrollan capacidades y valores que les permiten enfrentar con disciplina, creatividad y eficiencia los desafíos del siglo XXI .<br />
+               Formar profesionales en Ingeniería Comercial con visión estratégica, liderazgo y habilidades financieras, capaces de crear, dirigir y transformar empresas en entornos nacionales e internacionales. Nuestra formación se basa en la práctica real del mundo empresarial, gracias a la vinculación directa con la Cámara Nacional de Comercio y el sector productivo.<br />
               🔹 Visión:<br />
-               Ser reconocidos como la carrera líder en formación de profesionales en Administración de Empresas en Bolivia, destacándonos por nuestra excelencia académica, innovación pedagógica y compromiso con la responsabilidad social. Aspiramos a que nuestros egresados sean agentes de cambio en el ámbito empresarial, contribuyendo al desarrollo sostenible y al fortalecimiento del tejido empresarial nacional e internacional.
+               Ser una carrera líder a nivel nacional en la formación de ingenieros comerciales innovadores, reconocidos por su impacto en la transformación empresarial, su compromiso con el desarrollo económico sostenible y su conexión permanente con el ecosistema empresarial boliviano e internaciona.
             </motion.p>
             <motion.div variants={itemVariants}>
               <Link href="https://wa.link/51zpya" className='mx-auto bg-white px-10 py-3 text-black font-semibold rounded-3xl hover:scale-110 duration-300'>
@@ -239,7 +237,7 @@ export default function PageCarrera(){
           className='max-w-6xl mx-auto'
           variants={itemVariants}
         >
-          Formar profesionales en Administración de Empresas que apliquen sus conocimientos para analizar e interpretar fenómenos económicos y sociales, permitiéndoles contribuir al desarrollo y competitividad de las organizaciones en un entorno globalizado.
+         Formamos profesionales con visión global, listos para conquistar mercados internacionales. Aprenderás a negociar, gestionar exportaciones, dominar leyes y tecnología, ¡todo con actitud emprendedora y compromiso con el desarrollo del país!
         </motion.p> 
         <motion.div 
           className='flex gap-10 justify-center items-center flex-wrap my-7'
@@ -248,31 +246,31 @@ export default function PageCarrera(){
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/admin-empresas/img4.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/comercio/img4.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Desarrollar habilidades emprendedoras</h3>
-            <p className='relative z-10 opacity-80'>Fomentar la capacidad de identificar oportunidades de negocio, gestionar recursos y liderar equipos.
+            <h3 className='relative z-10 text-2xl font-bold'>Conocimiento del Mercado Global</h3>
+            <p className='relative z-10 opacity-80'>Comprende las tendencias y necesidades del mercado comercial externo, lo que le permite identificar oportunidades y desafíos en el ámbito internacional.
             </p>
           </motion.div>
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/admin-empresas/img5.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/comercio/img5.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Promover la investigación aplicada</h3>
-            <p className='relative z-10 opacity-80'>Impulsar la realización de estudios que permitan conocer y comprender las realidades socioeconómicas
+            <h3 className='relative z-10 text-2xl font-bold'>Dominio de Trámites y Logística</h3>
+            <p className='relative z-10 opacity-80'>Domina aduanas, transporte global y tesorería para que el comercio entre países fluya sin fronteras.
             </p>
           </motion.div>
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/admin-empresas/img7.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/comercio/img7.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Fortalecer la toma de decisiones</h3>
-            <p className='relative z-10 opacity-80'>Capacitar a los estudiantes en el uso de herramientas y técnicas para la planificación, ejecución y evaluación de proyectos.
+            <h3 className='relative z-10 text-2xl font-bold'>Gestión del Comercio Electrónico</h3>
+            <p className='relative z-10 opacity-80'>Impulsa el e-commerce global con estrategias innovadoras que llevan productos al mundo
             </p>
           </motion.div>        
         </motion.div>     
@@ -289,13 +287,13 @@ export default function PageCarrera(){
           className='text-4xl font-bold text-center'
           variants={itemVariants}
         >
-          Perfil del Profesional en Administración de Empresas
+          Perfil del Profesional en Comercio Internacional
         </motion.h2>
         <motion.p 
           className='max-w-6xl mx-auto opacity-80 text-center'
           variants={itemVariants}
         >
-          El profesional en Administración de Empresas está capacitado para gestionar eficientemente los recursos humanos, financieros y materiales de una organización, aplicando principios éticos y estratégicos para alcanzar los objetivos empresariales en un entorno competitivo y globalizado.
+          El egresado de Comercio Internacional de la universidad  está preparado para gestionar estrategias comerciales globales, dirigir empresas y promover el desarrollo sostenible con un enfoque ético y proactivo.
         </motion.p>
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 text-[#1d1d1b]"
@@ -306,10 +304,9 @@ export default function PageCarrera(){
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Planificación y Dirección Estratégica</h3>
+              <h3 className="font-bold text-lg">Visión Global y Conocimiento Estratégico</h3>
               <p className="text-sm mt-2">
-                Diseña y ejecuta planes estratégicos que alinean los objetivos organizacionales
-                con las oportunidades del mercado, asegurando el crecimiento y sostenibilidad de la empresa.
+                El egresado comprende a fondo la realidad social, económica y jurídica del entorno internacional, lo que le permite analizar fenómenos globales y diseñar estrategias de comercio exterior competitivas y sostenibles. Domina las teorías del comercio y relaciones internacionales, aplicándolas de manera efectiva en escenarios complejos y cambiantes.
               </p>
             </div>
           </motion.div>
@@ -318,10 +315,10 @@ export default function PageCarrera(){
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Gestión Financiera y Administrativa</h3>
+              <h3 className="font-bold text-lg">Promotor de la Internacionalización Empresarial
+</h3>
               <p className="text-sm mt-2">
-                Administra los recursos financieros mediante la elaboración de presupuestos,
-                análisis de costos y evaluación de inversiones, optimizando la rentabilidad y eficiencia operativa.
+                Actúa como asesor clave en procesos de exportación e importación, identificando oportunidades en mercados diversos. Evalúa y formula proyectos de internacionalización con enfoque innovador, adaptándose a los diferentes entornos comerciales y culturales.
               </p>
             </div>
           </motion.div>
@@ -330,10 +327,9 @@ export default function PageCarrera(){
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Liderazgo y Gestión del Talento Humano</h3>
+              <h3 className="font-bold text-lg">Habilidades Directivas y de Gestión Empresarial</h3>
               <p className="text-sm mt-2">
-                Desarrolla habilidades de liderazgo para motivar equipos, gestionar el talento humano
-                y fomentar un ambiente laboral productivo y ético.
+                Está capacitado para liderar, gestionar y controlar empresas y proyectos vinculados al comercio internacional. Posee competencias en dirección estratégica, planificación operativa y toma de decisiones que potencian la eficiencia de las operaciones internacionales
               </p>
             </div>
           </motion.div>
@@ -342,10 +338,9 @@ export default function PageCarrera(){
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Innovación y Adaptabilidad Organizacional</h3>
+              <h3 className="font-bold text-lg">Ética Profesional y Sensibilidad Intercultural</h3>
               <p className="text-sm mt-2">
-                Implementa procesos innovadores y se adapta a los cambios del entorno empresarial,
-                promoviendo la mejora continua y la competitividad de la organización.
+                Demuestra un fuerte compromiso ético y social, con una actitud proactiva frente a los desafíos del comercio global. Su sensibilidad intercultural le permite establecer relaciones comerciales sólidas y exitosas, reconociendo y respetando las particularidades culturales y económicas de los distintos bloques internacionales.
               </p>
             </div>
           </motion.div>
@@ -362,25 +357,24 @@ export default function PageCarrera(){
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           <motion.div variants={itemVariants}>
             <motion.img 
-              src="/carreras/admin-empresas/icono1.png" 
+              src="/carreras/comercio/icono1.png" 
               alt="Ícono prácticas" 
               className="mx-auto mb-4 w-12 h-12"
               whileHover={{ rotate: 10 }}
             />
             <h3 className="text-lg font-bold mb-2">Prácticas y Experiencia Laboral</h3>
             <p className="text-sm mb-4">
-              La inclusión de la Práctica Empresarial en el plan curricular posibilita que los estudiantes
-              se inserten en entornos reales de comercio internacional, aplicando lo aprendido en situaciones concretas
+              La inclusión de la Práctica Empresarial en el plan curricular posibilita que los estudiantes se inserten en entornos reales de comercio internacional, aplicando lo aprendido en situaciones concretas
             </p>
           </motion.div>
-          <motion.div
+          <motion.div 
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
             onClick={() => setShowModal(true)} 
             className="cursor-pointer"
           >
             <motion.img 
-              src="/carreras/admin-empresas/icono2.png" 
+              src="/carreras/comercio/icono2.png" 
               alt="Ícono plan" 
               className="mx-auto mb-4 w-12 h-12"
               whileHover={{ rotate: 10 }}
@@ -491,10 +485,11 @@ export default function PageCarrera(){
         </motion.div>
       )}
           <motion.div 
-            variants={itemVariants}   
+            variants={itemVariants}
+            
           >
             <motion.img 
-              src="/carreras/admin-empresas/icono3.png" 
+              src="/carreras/comercio/icono3.png" 
               alt="Ícono malla" 
               className="mx-auto mb-4 w-12 h-12"
               whileHover={{ rotate: 10 }}
@@ -520,14 +515,14 @@ export default function PageCarrera(){
           className='text-4xl font-bold text-center mb-8'
           variants={itemVariants}
         >
-          Internacionalízate: Actividades para Conectar y Crecer
+          Domina tu futuro con Finanzas
         </motion.h2>
         <motion.div 
           className='flex justify-center items-center flex-wrap gap-10 px-16'
           variants={containerVariants}
         >
           <motion.img 
-            src='/carreras/admin-empresas/img3.jpg' 
+            src='/carreras/comercio/img3.jpg' 
             className='rounded-3xl w-[80%] h-[330px] md:w-[670px] md:h-[670px] object-cover'
             variants={slideInFromLeft}
             whileHover={{ scale: 1.02 }}
@@ -536,7 +531,7 @@ export default function PageCarrera(){
             className='flex justify-around md:grid grid-cols-2 grid-rows-2 items-center gap-10 flex-wrap'
             variants={containerVariants}
           >
-            {['/carreras/admin-empresas/img4.jpg', '/carreras/admin-empresas/img5.jpg', '/carreras/admin-empresas/img6.jpg', '/carreras/admin-empresas/img7.jpg'].map((img, index) => (
+            {['/carreras/comercio/img4.jpg', '/carreras/comercio/img5.jpg', '/carreras/comercio/img6.jpg', '/carreras/comercio/img7.jpg'].map((img, index) => (
               <motion.img 
                 key={index}
                 src={img}
@@ -560,7 +555,7 @@ export default function PageCarrera(){
           className={`${styles.textoConImagen} text-5xl md:text-8xl text-center`}
           variants={itemVariants}
         >
-          Has Real Proyecto
+          VISITAS
         </motion.h2>
         <motion.div 
           className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 mt-10"
@@ -570,24 +565,31 @@ export default function PageCarrera(){
             className="text-primary font-bold text-2xl leading-tight w-full md:w-1/3"
             variants={slideInFromLeft}
           >
-            <p>Has tus proyectos y</p>
-            <p>aprende a</p>
-            <p>emprender</p>
+            Explora el Comercio Internacional en Terreno Real
           </motion.div>
           <motion.div 
-            className="text-[#555] w-full md:w-2/3 space-y-2"
+            className="text-[#555] w-full md:w-2/3 space-y-2 border-t-4 md:border-t-0 md:border-l-4 border-primary pl-4"
             variants={slideInFromRight}
           >
             <p>
-              Aquí en la U Real no solo aprenderás como administrar una organización, sino también como crear tu propia empresa,
-              además de conocer lugares que enriquecerán tu espíritu emprendedor.
+              ¡En la carrera de Comercio Internacional de la Universidad Real de la Cámara Nacional de Comercio, no solo estudias el mundo... lo vives!
             </p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Convertirás tu idea de negocio en realidad, exponiéndolos en ferias.</li>
-              <li>Pondrás en práctica tus habilidades blandas.</li>
-              <li>Visitas a distintos lugares.</li>
-              <li>Prácticas empresariales</li>
-            </ul>
+            <br />
+            <p>
+              Nuestros estudiantes cruzan fronteras y se embarcan en viajes académicos internacionales a países como Chile y Perú, donde visitan puertos estratégicos como el de Arica, zonas francas, centros logísticos y aduanas. Ahí, todo lo aprendido en clases cobra vida.
+            </p>
+            <br />
+            <p>
+              Suben a buques de carga, analizan procesos reales de exportación e importación, interactúan con operadores logísticos y entienden cómo se mueve la economía global desde el terreno.
+            </p>
+            <br />
+            <p>
+              Pero no es solo teoría: estos viajes son una aventura profesional y cultural, donde cada paso fortalece su perfil internacional y los conecta con el ritmo dinámico del comercio exterior.
+            </p>
+            <br />
+            <p>
+              Vive la experiencia. Aprende con acción. Conviértete en un verdadero profesional del comercio internacional.
+            </p>
           </motion.div>
         </motion.div>
       </motion.section>

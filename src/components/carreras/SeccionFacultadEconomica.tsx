@@ -7,7 +7,7 @@ export default function SeccionFacultadEconomica(){
 Ciencias Económicas</h2>
       <h3 className="text-4xl text-center text-primary">Formando líderes con visión estratégica y compromiso empresarial</h3>
       <p className="text-center text-gray-600 text-xl">La Facultad de Ciencias Económicas forma líderes con visión emprendedora, preparados para innovar, gestionar con eficacia y transformar el entorno económico y empresarial del país.</p>
-      <div className="flex flex-wrap justify-around items-center gap-10">
+      <div className="flex flex-wrap justify-center items-center gap-10">
         <CardCarrera 
           id="01"
           carrera="Administración de Empresas"

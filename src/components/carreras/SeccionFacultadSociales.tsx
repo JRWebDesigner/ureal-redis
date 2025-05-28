@@ -6,7 +6,7 @@ export default function SeccionFacultadSociales(){
       <h2 className="text-center font-bold text-primary text-5xl">Carreras de la Facultad de <br/> Ciencias Sociales, Jurídicas y Humanidades</h2>
       <h3 className="text-4xl text-center text-primary"> Comprometidos con la justicia, el pensamiento crítico y el desarrollo humano</h3>
       <p className="text-center text-gray-600 text-xl">La Facultad de Ciencias Sociales, Jurídicas y Humanidades forma profesionales éticos y comprometidos, con pensamiento crítico y vocación para transformar la sociedad desde lo jurídico, social y humanístico.</p>
-      <div className="flex flex-wrap justify-around items-center gap-10">
+      <div className="flex flex-wrap justify-center items-center gap-10">
         <CardCarrera 
           id="07"
           carrera="Derecho"
