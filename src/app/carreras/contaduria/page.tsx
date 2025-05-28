@@ -164,12 +164,12 @@ export default function PageCarrera(){
            className='relative flex justify-center items-center mb-5'
          >
             <motion.img 
-              src='/carreras/comercio/img1.png' 
+              src='/carreras/contaduria/img1.png' 
               className='relative z-20 rounded-3xl h-[400px] md:h-[500px] max-w-1/2 object-cover'
               whileHover={{ scale: 1.02 }}
             />
             <motion.img 
-              src='/carreras/comercio/img2.png' 
+              src='/carreras/contaduria/img2.png' 
               className='-ml-22 rounded-3xl h-[470px] md:h-[570px] max-w-1/2 object-cover'
               whileHover={{ scale: 1.02 }}
             />
@@ -246,7 +246,7 @@ export default function PageCarrera(){
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/comercio/img4.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/contaduria/img4.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
             <h3 className='relative z-10 text-2xl font-bold'>Desarrollar habilidades técnicas en contabilidad
@@ -258,7 +258,7 @@ export default function PageCarrera(){
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/comercio/img5.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/contaduria/img5.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
             <h3 className='relative z-10 text-2xl font-bold'>Fomentar valores éticos
@@ -269,7 +269,7 @@ export default function PageCarrera(){
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/comercio/img7.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/contaduria/img7.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
             <h3 className='relative z-10 text-2xl font-bold'>Formación práctica</h3>
@@ -360,7 +360,7 @@ export default function PageCarrera(){
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           <motion.div variants={itemVariants}>
             <motion.img 
-              src="/carreras/comercio/icono1.png" 
+              src="/carreras/contaduria/icono1.png" 
               alt="Ícono prácticas" 
               className="mx-auto mb-4 w-12 h-12"
               whileHover={{ rotate: 10 }}
@@ -377,7 +377,7 @@ export default function PageCarrera(){
             className="cursor-pointer"
           >
             <motion.img 
-              src="/carreras/comercio/icono2.png" 
+              src="/carreras/contaduria/icono2.png" 
               alt="Ícono plan" 
               className="mx-auto mb-4 w-12 h-12"
               whileHover={{ rotate: 10 }}
@@ -492,7 +492,7 @@ export default function PageCarrera(){
             
           >
             <motion.img 
-              src="/carreras/comercio/icono3.png" 
+              src="/carreras/contaduria/icono3.png" 
               alt="Ícono malla" 
               className="mx-auto mb-4 w-12 h-12"
               whileHover={{ rotate: 10 }}
@@ -525,7 +525,7 @@ export default function PageCarrera(){
           variants={containerVariants}
         >
           <motion.img 
-            src='/carreras/comercio/img3.jpg' 
+            src='/carreras/contaduria/img3.jpg' 
             className='rounded-3xl w-[80%] h-[330px] md:w-[670px] md:h-[670px] object-cover'
             variants={slideInFromLeft}
             whileHover={{ scale: 1.02 }}
@@ -534,7 +534,7 @@ export default function PageCarrera(){
             className='flex justify-around md:grid grid-cols-2 grid-rows-2 items-center gap-10 flex-wrap'
             variants={containerVariants}
           >
-            {['/carreras/comercio/img4.jpg', '/carreras/comercio/img5.jpg', '/carreras/comercio/img6.jpg', '/carreras/comercio/img7.jpg'].map((img, index) => (
+            {['/carreras/contaduria/img4.jpg', '/carreras/contaduria/img5.jpg', '/carreras/contaduria/img6.jpg', '/carreras/contaduria/img7.jpg'].map((img, index) => (
               <motion.img 
                 key={index}
                 src={img}
