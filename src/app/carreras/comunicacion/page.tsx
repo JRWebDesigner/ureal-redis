@@ -47,8 +47,8 @@ const slideInFromRight = {
 export default function PageCarrera(){
   const [showModal, setShowModal] = useState(false)
   const [semestreSeleccionado, setSemestreSeleccionado] = useState(0)
- const semestres = [
-  {
+  const semestres = [
+    {
     nombre: "Primer Semestre",
     materias: [
       { codigo: "MAT100-1", nombre: "Matemáticas I" },
@@ -88,10 +88,10 @@ export default function PageCarrera(){
     nombre: "Cuarto Semestre",
     materias: [
       { codigo: "FEP104-4", nombre: "Formulación y Evaluación de Proyectos" },
-      { codigo: "PDV101-4", nombre: "Administración de Ventas" },
-      { codigo: "MER102-4", nombre: "Mercadotecnia II" },
-      { codigo: "CON103-4", nombre: "Contabilidad Administrativa" },
       { codigo: "EDS101-4", nombre: "Ecología y Desarrollo Sostenible" },
+      { codigo: "DER104-4", nombre: "Legislación Aduanera" },
+      { codigo: "COI101-4", nombre: "Comunidad Intercultural" },
+      { codigo: "ANI103-4", nombre: "Ambiente de Negocios Internacionales" },
       { codigo: "CDA102-4", nombre: "Tec. Cuan. para la Toma de Decisiones" },
       { codigo: "ENG103-4", nombre: "Inglés IV" }
     ]
@@ -99,23 +99,23 @@ export default function PageCarrera(){
   {
     nombre: "Quinto Semestre",
     materias: [
-      { codigo: "CDA103-5", nombre: "Análisis de Decisiones" },
-      { codigo: "ADC106-5", nombre: "Análisis del Consumidor" },
-      { codigo: "DPM101-5", nombre: "Desarrollo de Productos" },
+      { codigo: "DER105-5", nombre: "Comercio Exterior" },
       { codigo: "IDM104-5", nombre: "Investigación de Mercados I" },
-      { codigo: "MDS105-5", nombre: "Mercadotecnia de Servicios" },
-      { codigo: "PDV102-5", nombre: "Procesos de Ventas" },
+      { codigo: "CON103-5", nombre: "Contabilidad Administrativa" },
+      { codigo: "ADF105-5", nombre: "Administración Financiera" },
+      { codigo: "CDA103-5", nombre: "Análisis de Decisiones" },
+      { codigo: "ECO104-5", nombre: "Economía Política Internacional" },
       { codigo: "ENG104-5", nombre: "Inglés V" }
     ]
   },
   {
     nombre: "Sexto Semestre",
     materias: [
-      { codigo: "DPM102-6", nombre: "Sistema de Información de Mercados" },
-      { codigo: "IDM105-6", nombre: "Investigación de Mercados II" },
-      { codigo: "PUB107-6", nombre: "Publicidad I" },
-      { codigo: "MER103-6", nombre: "Mercadotecnia III" },
-      { codigo: "PDV103-6", nombre: "Promoción de Ventas" },
+      { codigo: "ANI105-6", nombre: "Análisis de Mercados Internacionales" },
+      { codigo: "CDA104-6", nombre: "Administración de Operaciones" },
+      { codigo: "ECO103-6", nombre: "Organismos y Regulaciones Int." },
+      { codigo: "ADF106-6", nombre: "Finanzas Internacionales" },
+      { codigo: "ANI104-6", nombre: "Sistemas y Operaciones de Comercio Int." },
       { codigo: "DDE101-6", nombre: "Desarrollo de Emprendedores" },
       { codigo: "ENG105-6", nombre: "Inglés VI" }
     ]
@@ -124,11 +124,11 @@ export default function PageCarrera(){
     nombre: "Séptimo Semestre",
     materias: [
       { codigo: "VEP107-7", nombre: "Valores en el Ejercicio Profesional" },
-      { codigo: "PUB108-7", nombre: "Publicidad II" },
-      { codigo: "MER104-7", nombre: "Seminario Avanzado de Mercadotecnia" },
-      { codigo: "PDV104-7", nombre: "Seminario de Promoción" },
-      { codigo: "IDM106-7", nombre: "Seminario de Investigación de Mercados" },
-      { codigo: "DPM103-7", nombre: "Planeación y Control de Mercadotecnia" },
+      { codigo: "ANI106-7", nombre: "Análisis de Competitividad Internacional" },
+      { codigo: "CDA105-7", nombre: "Logística Empresarial" },
+      { codigo: "DER107-7", nombre: "Seminario de Derecho Comercial I y II" },
+      { codigo: "DER106-7", nombre: "Merceología Aduanera" },
+      { codigo: "ECO104-7", nombre: "Seminario Integrador de Comercio Int." },
       { codigo: "SDG107-7", nombre: "Seminario de Grado I" }
     ]
   },
@@ -142,15 +142,15 @@ export default function PageCarrera(){
   {
     nombre: "Materias Complementarias",
     materias: [
-      { codigo: "ECO102", nombre: "Economía Política Internacional" },
-      { codigo: "INA100", nombre: "Idioma Nativo (Aymara o Quechua)" },
-      { codigo: "AF101", nombre: "Instituciones Financieras" }
+      { codigo: "TDC107", nombre: "Técnicas de Consultoría" },
+      { codigo: "PEE-101", nombre: "Política y Estrategia Empresarial" },
+      { codigo: "MDS106", nombre: "Mercadotecnia de Servicios" }
     ]
   }
 ];
   return(
     <>
-      <Hero2 titulo="Tu marca inicia hoy, conoce el mundo del marketing"/>
+      <Hero2 titulo="Tu futuro inicia hoy, tu marca será internacional"/>
       
       <motion.section 
         initial="hidden"
@@ -164,12 +164,12 @@ export default function PageCarrera(){
            className='relative flex justify-center items-center mb-5'
          >
             <motion.img 
-              src='/carreras/mercadotecnia/img1.png' 
+              src='/carreras/comercio/img1.png' 
               className='relative z-20 rounded-3xl h-[400px] md:h-[500px] max-w-1/2 object-cover'
               whileHover={{ scale: 1.02 }}
             />
             <motion.img 
-              src='/carreras/mercadotecnia/img2.png' 
+              src='/carreras/comercio/img2.png' 
               className='-ml-22 rounded-3xl h-[470px] md:h-[570px] max-w-1/2 object-cover'
               whileHover={{ scale: 1.02 }}
             />
@@ -182,7 +182,7 @@ export default function PageCarrera(){
             className='text-4xl md:text-5xl'
             variants={itemVariants}
           >
-            MERCADOTECNÍA
+            COMERCIO INTERNACIONAL
           </motion.h2>
           <motion.div 
             className="pl-4 border-l-2 border-white flex flex-col gap-7"
@@ -192,7 +192,7 @@ export default function PageCarrera(){
               className="opacity-70"
               variants={itemVariants}
             >
-             La globalización ha promovido un desarrollo acelerado en la ciencia y la tecnología, lo que exige una formación profesional que pueda enfrentar estos desafíos. La carrera se justifica por su capacidad de formar profesionales capaces de crear estrategias de Marketing
+              Estudiar la carrera de Comercio Internacional es una excelente opción para aquellos interesados en desempeñarse en un entorno globalizado, ya que brinda un conjunto de habilidades y competencias que son esenciales para manejar los intercambios comerciales entre países.
             </motion.p>
             <motion.h3 
               className="text-3xl text-semibold"
@@ -205,9 +205,9 @@ export default function PageCarrera(){
               variants={itemVariants}
             >
               🔹 Misión:<br />
-               Formar profesionales en mercadotecnia con una sólida base teórica y práctica, capaces de diseñar, implementar y evaluar estrategias de marketing innovadoras y efectivas.  <br />
+               Formar profesionales éticos, emprendedores y con pensamiento crítico, capacitados en comercio internacional para gestionar eficientemente transacciones globales, con conocimientos en negociación, logística, leyes internacionales y tecnología.<br />
               🔹 Visión:<br />
-               Ser una carrera de referencia en la formación de profesionales en mercadotecnia, reconocida por su excelencia académica, su enfoque en la innovación y su compromiso con el desarrollo sostenible.
+               Ser líderes en la formación de expertos en comercio internacional, comprometidos con el desarrollo del país, fomentando la innovación, el liderazgo y la sostenibilidad para enfrentar los desafíos del mercado global.
             </motion.p>
             <motion.div variants={itemVariants}>
               <Link href="https://wa.link/51zpya" className='mx-auto bg-white px-10 py-3 text-black font-semibold rounded-3xl hover:scale-110 duration-300'>
@@ -235,7 +235,7 @@ export default function PageCarrera(){
           className='max-w-6xl mx-auto'
           variants={itemVariants}
         >
-Los profesionales serán capaces de desempeñarse en ámbitos de dirección en mercadotecnia y ventas, inteligencia de mercado, diseño de productos y servicios, promoción y publicidad, así como en la generación de negocios. 
+         Formamos profesionales con visión global, listos para conquistar mercados internacionales. Aprenderás a negociar, gestionar exportaciones, dominar leyes y tecnología, ¡todo con actitud emprendedora y compromiso con el desarrollo del país!
         </motion.p> 
         <motion.div 
           className='flex gap-10 justify-center items-center flex-wrap my-7'
@@ -244,30 +244,31 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/mercadotecnia/img4.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/comercio/img4.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Capacitar en el análisis de mercados</h3>
-            <p className='relative z-10 opacity-80'>Capaces de reconocer y evaluar las necesidades y deseos de los consumidores.
+            <h3 className='relative z-10 text-2xl font-bold'>Conocimiento del Mercado Global</h3>
+            <p className='relative z-10 opacity-80'>Comprende las tendencias y necesidades del mercado comercial externo, lo que le permite identificar oportunidades y desafíos en el ámbito internacional.
             </p>
           </motion.div>
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/mercadotecnia/img5.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/comercio/img5.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Fomentar una visión ética y responsable</h3>
-            <p className='relative z-10 opacity-80'>Desarrollar estrategias de mercadotecnia que contribuyan al bienestar social 
+            <h3 className='relative z-10 text-2xl font-bold'>Dominio de Trámites y Logística</h3>
+            <p className='relative z-10 opacity-80'>Domina aduanas, transporte global y tesorería para que el comercio entre países fluya sin fronteras.
+            </p>
           </motion.div>
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/mercadotecnia/img7.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/comercio/img7.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Competencias estratégicas</h3>
-            <p className='relative z-10 opacity-80'>Capacidad en la formulación de estrategias de Marketing.
+            <h3 className='relative z-10 text-2xl font-bold'>Gestión del Comercio Electrónico</h3>
+            <p className='relative z-10 opacity-80'>Impulsa el e-commerce global con estrategias innovadoras que llevan productos al mundo
             </p>
           </motion.div>        
         </motion.div>     
@@ -284,13 +285,13 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
           className='text-4xl font-bold text-center'
           variants={itemVariants}
         >
-          Perfil  del Profesional Lic. en Mercadotecnía
+          Perfil del Profesional en Comercio Internacional
         </motion.h2>
         <motion.p 
           className='max-w-6xl mx-auto opacity-80 text-center'
           variants={itemVariants}
         >
-         Profesional en Mercadotecnia con una sólida formación en investigación de mercado, diseño y ejecución de estrategias de marketing, gestión de marcas y desarrollo de técnicas de promoción y que puedan comunicarse en Ingles.  
+          El egresado de Comercio Internacional de la universidad  está preparado para gestionar estrategias comerciales globales, dirigir empresas y promover el desarrollo sostenible con un enfoque ético y proactivo.
         </motion.p>
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 text-[#1d1d1b]"
@@ -301,9 +302,9 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Conocimiento profundo de metodologías de investigación de mercado</h3>
+              <h3 className="font-bold text-lg">Visión Global y Conocimiento Estratégico</h3>
               <p className="text-sm mt-2">
-                Experto en la aplicación de metodologías cualitativas y cuantitativas para la recopilación y análisis de datos de mercado. Capacitado en el uso de herramientas estadísticas y software especializado para interpretar tendencias de consumo, segmentar mercados y evaluar la efectividad de campañas. 
+                El egresado comprende a fondo la realidad social, económica y jurídica del entorno internacional, lo que le permite analizar fenómenos globales y diseñar estrategias de comercio exterior competitivas y sostenibles. Domina las teorías del comercio y relaciones internacionales, aplicándolas de manera efectiva en escenarios complejos y cambiantes.
               </p>
             </div>
           </motion.div>
@@ -312,10 +313,10 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Habilidad para diseñar y ejecutar estrategias de marketing
+              <h3 className="font-bold text-lg">Promotor de la Internacionalización Empresarial
 </h3>
               <p className="text-sm mt-2">
-                Competente en la formulación de estrategias de marketing alineadas con los objetivos organizacionales. Experiencia en la implementación de planes comerciales y de ventas, utilizando herramientas.
+                Actúa como asesor clave en procesos de exportación e importación, identificando oportunidades en mercados diversos. Evalúa y formula proyectos de internacionalización con enfoque innovador, adaptándose a los diferentes entornos comerciales y culturales.
               </p>
             </div>
           </motion.div>
@@ -324,10 +325,9 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Capacidad para gestionar marcas y desarrollar técnicas de promoción
-</h3>
+              <h3 className="font-bold text-lg">Habilidades Directivas y de Gestión Empresarial</h3>
               <p className="text-sm mt-2">
-                Habilidad en la creación y gestión de identidades de marca, asegurando coherencia en la comunicación y posicionamiento en el mercado. Experiencia en el desarrollo de campañas promocionales efectivas, utilizando medios gráficos, audiovisuales y digitales.
+                Está capacitado para liderar, gestionar y controlar empresas y proyectos vinculados al comercio internacional. Posee competencias en dirección estratégica, planificación operativa y toma de decisiones que potencian la eficiencia de las operaciones internacionales
               </p>
             </div>
           </motion.div>
@@ -336,9 +336,9 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Competencia en la formulación y evaluación de proyectos de inversión</h3>
+              <h3 className="font-bold text-lg">Ética Profesional y Sensibilidad Intercultural</h3>
               <p className="text-sm mt-2">
-                Formación en la elaboración de proyectos de inversión, incluyendo la estimación de costos, análisis de viabilidad y retorno de inversión
+                Demuestra un fuerte compromiso ético y social, con una actitud proactiva frente a los desafíos del comercio global. Su sensibilidad intercultural le permite establecer relaciones comerciales sólidas y exitosas, reconociendo y respetando las particularidades culturales y económicas de los distintos bloques internacionales.
               </p>
             </div>
           </motion.div>
@@ -355,7 +355,7 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           <motion.div variants={itemVariants}>
             <motion.img 
-              src="/carreras/mercadotecnia/icono1.png" 
+              src="/carreras/comercio/icono1.png" 
               alt="Ícono prácticas" 
               className="mx-auto mb-4 w-12 h-12"
               whileHover={{ rotate: 10 }}
@@ -372,7 +372,7 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
             className="cursor-pointer"
           >
             <motion.img 
-              src="/carreras/mercadotecnia/icono2.png" 
+              src="/carreras/comercio/icono2.png" 
               alt="Ícono plan" 
               className="mx-auto mb-4 w-12 h-12"
               whileHover={{ rotate: 10 }}
@@ -487,7 +487,7 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
             
           >
             <motion.img 
-              src="/carreras/mercadotecnia/icono3.png" 
+              src="/carreras/comercio/icono3.png" 
               alt="Ícono malla" 
               className="mx-auto mb-4 w-12 h-12"
               whileHover={{ rotate: 10 }}
@@ -513,14 +513,14 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
           className='text-4xl font-bold text-center mb-8'
           variants={itemVariants}
         >
-          Aprende Tecnologías de la Información y Comunicación
+          Domina tu futuro con Finanzas
         </motion.h2>
         <motion.div 
           className='flex justify-center items-center flex-wrap gap-10 px-16'
           variants={containerVariants}
         >
           <motion.img 
-            src='/carreras/mercadotecnia/img3.jpg' 
+            src='/carreras/comercio/img3.jpg' 
             className='rounded-3xl w-[80%] h-[330px] md:w-[670px] md:h-[670px] object-cover'
             variants={slideInFromLeft}
             whileHover={{ scale: 1.02 }}
@@ -529,7 +529,7 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
             className='flex justify-around md:grid grid-cols-2 grid-rows-2 items-center gap-10 flex-wrap'
             variants={containerVariants}
           >
-            {['/carreras/mercadotecnia/img4.jpg', '/carreras/mercadotecnia/img5.jpg', '/carreras/mercadotecnia/img6.jpg', '/carreras/mercadotecnia/img7.jpg'].map((img, index) => (
+            {['/carreras/comercio/img4.jpg', '/carreras/comercio/img5.jpg', '/carreras/comercio/img6.jpg', '/carreras/comercio/img7.jpg'].map((img, index) => (
               <motion.img 
                 key={index}
                 src={img}
@@ -553,7 +553,7 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
           className={`${styles.textoConImagen} text-5xl md:text-8xl text-center`}
           variants={itemVariants}
         >
-          Ferias
+          VISITAS
         </motion.h2>
         <motion.div 
           className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 mt-10"
@@ -563,24 +563,30 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
             className="text-primary font-bold text-2xl leading-tight w-full md:w-1/3"
             variants={slideInFromLeft}
           >
-            Demuestra tus habilidades en nuestras ferias
+            Explora el Comercio Internacional en Terreno Real
           </motion.div>
           <motion.div 
             className="text-[#555] w-full md:w-2/3 space-y-2 border-t-4 md:border-t-0 md:border-l-4 border-primary pl-4"
             variants={slideInFromRight}
           >
             <p>
-              En la U. Real nuestros estudiantes demuestran sus conocimientos en las ferias, donde presentaran sus proyectos y demostraran su marca y otras actividades como:
+              ¡En la carrera de Comercio Internacional de la Universidad Real de la Cámara Nacional de Comercio, no solo estudias el mundo... lo vives!
             </p>
             <br />
-            <ul>
-              <li>- Los estudiantes crean productos que exponen en la feria y  son evaluados por jurados.</li>
-              <li>- Visitas a diferentes empresas</li>
-              <li>- Simulaciones empresariales</li>
-            </ul>
+            <p>
+              Nuestros estudiantes cruzan fronteras y se embarcan en viajes académicos internacionales a países como Chile y Perú, donde visitan puertos estratégicos como el de Arica, zonas francas, centros logísticos y aduanas. Ahí, todo lo aprendido en clases cobra vida.
+            </p>
             <br />
             <p>
-              Además constantemente estarán creando proyectos, creando marcas durante la carrera en diferentes materias y se incentiva el espíritu colaborador entre estudiantes. 
+              Suben a buques de carga, analizan procesos reales de exportación e importación, interactúan con operadores logísticos y entienden cómo se mueve la economía global desde el terreno.
+            </p>
+            <br />
+            <p>
+              Pero no es solo teoría: estos viajes son una aventura profesional y cultural, donde cada paso fortalece su perfil internacional y los conecta con el ritmo dinámico del comercio exterior.
+            </p>
+            <br />
+            <p>
+              Vive la experiencia. Aprende con acción. Conviértete en un verdadero profesional del comercio internacional.
             </p>
           </motion.div>
         </motion.div>
