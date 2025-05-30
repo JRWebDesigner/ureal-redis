@@ -29,51 +29,51 @@ export default function SuccessSection() {
     <section className="py-12 px-6 max-w-6xl mx-auto">
             
       <div className="grid md:grid-cols-2 gap-10">
-           <div className="grid grid-cols-2 gap-4 p-4 max-w-6xl mx-auto"> {/* Top left large image */} <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }} className="col-span-2 md:col-span-2 row-span-2" > <img
-src="/exito1.jpg"
+           <div className="grid grid-cols-2 grid-rows-2 md:grid-cols-3 md:grid-rows-2 gap-4 p-4 max-w-6xl mx-auto"> {/* Top left big image */} <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="col-span-2 md:col-span-2 row-span-1" > <img
+src="/Images/exito1.jpg"
 alt="No te detengas"
-className="rounded-2xl w-full h-full object-cover shadow-lg"
+className="rounded-2xl w-full h-full object-cover shadow-xl"
 /> </motion.div>
 
-{/* Top right small image */}
+{/* Top right vertical image */}
   <motion.div
     initial={{ opacity: 0, x: 50 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.6 }}
-    className="row-span-1"
+    className="row-span-2 col-span-1 hidden md:block"
   >
     <img
-      src="/exito2.jpg"
+      src="/Images/exito2.jpg"
       alt="Graduation"
-      className="rounded-2xl w-full h-full object-cover shadow-md"
+      className="rounded-2xl w-full h-full object-cover shadow-xl"
     />
   </motion.div>
 
-  {/* Bottom left small image */}
+  {/* Bottom left image */}
   <motion.div
     initial={{ opacity: 0, x: -50 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.6 }}
-    className="row-span-1"
+    className="col-span-1 row-span-1"
   >
     <img
-      src="/exito3.jpg"
+      src="/Images/exito3.jpg"
       alt="Bienvenid@ a tu historia universitaria"
-      className="rounded-2xl w-full h-full object-cover shadow-md"
+      className="rounded-2xl w-full h-full object-cover shadow-xl"
     />
   </motion.div>
 
-  {/* Bottom right small image */}
+  {/* Bottom right image */}
   <motion.div
-    initial={{ opacity: 0, scale: 0.8 }}
-    animate={{ opacity: 1, scale: 1 }}
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.6 }}
-    className="row-span-1 col-span-2 md:col-span-1"
+    className="col-span-1 row-span-1"
   >
     <img
-      src="/exito4.jpg"
+      src="/Images/exito4.jpg"
       alt="Paga tus cuotas en segundos"
-      className="rounded-2xl w-full h-full object-cover shadow-md"
+      className="rounded-2xl w-full h-full object-cover shadow-xl"
     />
   </motion.div>
 </div>
