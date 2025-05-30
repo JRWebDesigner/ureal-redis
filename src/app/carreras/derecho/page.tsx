@@ -258,7 +258,7 @@ export default function PageCarrera(){
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
             <h3 className='relative z-10 text-2xl font-bold'>Desarrollar habilidades prácticas</h3>
-            <p className='relative z-10 opacity-80'>A través de la participación en clínicas jurídicas, pasantías y simulaciones de juicios.
+            <p className='relative z-10 opacity-80'>A través de la participación en clínicas jurídicas, pasantías y simulaciones de juicios.</p>
           </motion.div>
           <motion.div 
             variants={itemVariants}
