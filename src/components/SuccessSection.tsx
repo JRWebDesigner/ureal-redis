@@ -38,7 +38,7 @@ export default function SuccessSection() {
         className="col-span-2 md:col-span-2"
       >
         <img
-          src="/exito1.jpg"
+          src="/Images/exito1.jpg"
           alt="No te detengas"
           className="rounded-xl w-full h-auto"
         />
@@ -51,7 +51,7 @@ export default function SuccessSection() {
         transition={{ duration: 0.6 }}
       >
         <img
-          src="/exito2.jpg"
+          src="/Images/exito2.jpg"
           alt="Graduation"
           className="rounded-xl w-full h-auto"
         />
@@ -64,7 +64,7 @@ export default function SuccessSection() {
         transition={{ duration: 0.6 }}
       >
         <img
-          src="/exito3.jpg"
+          src="/Images/exito3.jpg"
           alt="Bienvenid@ a tu historia universitaria"
           className="rounded-xl w-full h-auto"
         />
@@ -77,7 +77,7 @@ export default function SuccessSection() {
         transition={{ duration: 0.6 }}
       >
         <img
-          src="/exito4.jpg"
+          src="/Images/exito4.jpg"
           alt="Paga tus cuotas en segundos"
           className="rounded-xl w-full h-auto"
         />
