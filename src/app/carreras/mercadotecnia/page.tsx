@@ -147,11 +147,10 @@ export default function PageCarrera(){
       { codigo: "AF101", nombre: "Instituciones Financieras" }
     ]
   }
-];
+]
   return(
     <>
-      <Hero2 titulo="Tu marca inicia hoy, conoce el mundo del marketing"/>
-      
+      <Hero2 titulo="Tu marca inicia hoy, conoce el mundo del marketing" />
       <motion.section 
         initial="hidden"
         whileInView="visible"
@@ -258,7 +257,7 @@ Los profesionales serán capaces de desempeñarse en ámbitos de dirección en m
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
             <h3 className='relative z-10 text-2xl font-bold'>Fomentar una visión ética y responsable</h3>
-            <p className='relative z-10 opacity-80'>Desarrollar estrategias de mercadotecnia que contribuyan al bienestar social 
+            <p className='relative z-10 opacity-80'>Desarrollar estrategias de mercadotecnia que contribuyan al bienestar social</p>
           </motion.div>
           <motion.div 
             variants={itemVariants}

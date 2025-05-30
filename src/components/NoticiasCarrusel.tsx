@@ -15,13 +15,13 @@ const noticias = [
   },
   {
     id: 2,
-    imagen: "/Images/not1.jpg",
-    texto: "Los estudiantes del último semestre de la carrera de Comunicación Audiovisual, bajo la supervisión del Lic. César Ajpi, están desarrollando una destacada labor durante sus prácticas profesionales en el canal televisivo RTP"
+    imagen: "/Images/not2.jpg",
+    texto: "Apunten el día 24 de abril para que asistan al evento de Bienvenida Estudiantil UREAL 2025. Los esperamos desde las 09:00 Lugar: https://maps.app.goo.gl/9YRubzZrmzFHQSZ49"
   },
   {
     id: 3,
-    imagen: "/Images/not1.jpg",
-    texto: "Los estudiantes del último semestre de la carrera de Comunicación Audiovisual, bajo la supervisión del Lic. César Ajpi, están desarrollando una destacada labor durante sus prácticas profesionales en el canal televisivo RTP"
+    imagen: "/Images/not3.jpg",
+    texto: "prende PRODUCCIÓN MUSICAL y MUSIC BUSINESSEn sólo un mes podrás comprender, crear, grabar, mezclar y masterizar piezas musicales para finalmente, planificar el proceso de comercialización, distribución, gestión y monetización de la música."
   }
 ];
 
@@ -37,14 +37,14 @@ export default function NoticiasCarrusel() {
   return (
     <>
       <h2 className='font-bold text-center text-3xl mt-16'>Últimas Noticias</h2>
-      <div className="relative w-[70%] h-[80dvh] mx-auto mt-8">
+      <div className="relative w-[90%] h-[90dvh] md:h-[80dvh] mx-auto mt-8">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           navigation
           pagination={{ clickable: true }}
           autoplay={{ delay: 5000 }}
           loop
-          className="w-[90%] h-full flex justify-center items-center"
+          className="w-full h-full flex justify-center items-center"
         >
           {noticias.map((noticia) => (
             <SwiperSlide key={noticia.id} className="flex justify-center items-center relative pl-16">
@@ -54,13 +54,13 @@ export default function NoticiasCarrusel() {
                 transition={{ duration: 0.6 }}
                 src={noticia.imagen}
                 alt={`noticia ${noticia.id}`}
-                className="w-[90%] h-[80%] rounded-3xl object-cover "
+                className="w-[90%] h-[67%] md:h-[80%] rounded-3xl object-cover "
               />
               <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
-                className="w-[450px] absolute bottom-8 right-8 p-4 bg-primary text-white font-semibold rounded-3xl shadow-xl"
+                className="w-[90%] md:w-[450px] md:absolute bottom-8 right-8 p-4 bg-primary text-white font-semibold rounded-3xl shadow-xl"
               >
                 {noticia.texto}
               </motion.div>

@@ -9,15 +9,15 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 const careers = [
-  { title: "Administración Financiera", img: "/carreras/PFinanciera.jpg", slug: "/administracion-financiera" },
-  { title: "Comercio Internacional", img: "/carreras/PComercio.jpg", slug: "/comercio-internacional" },
-  { title: "Comunicación Audiovisual", img: "/carreras/PAudiovisual.jpg", slug: "/comunicacion-audiovisual" },
+  { title: "Administración Financiera", img: "/carreras/PFinanciera.jpg", slug: "/admin-financiera" },
+  { title: "Comercio Internacional", img: "/carreras/PComercio.jpg", slug: "/comercio" },
+  { title: "Comunicación Audiovisual", img: "/carreras/PAudiovisual.jpg", slug: "/comunicacion" },
   { title: "Mercadotecnia", img: "/carreras/PMercadotecnia.jpg", slug: "/mercadotecnia" },
-  { title: "Ingeniería en Sistemas y Computación Administrativa", img: "/carreras/PSistemas-computacion.jpg", slug: "/ingenieria-sistemas" },
-  { title: "Administración Turística y Hotelería", img: "/carreras/PTurismo.jpg", slug: "/administracion-turistica" },
-  { title: "Administración de Empresas", img: "/carreras/PAdministracion.jpg", slug: "/administracion-empresas" },
-  { title: "Contaduría Pública", img: "/carreras/PContaduria.jpg", slug: "/contaduria-publica" },
-  { title: "Ingeniería Comercial", img: "/carreras/PIngenieria-comercial.jpg", slug: "/ingenieria-comercial" },
+  { title: "Ingeniería en Sistemas y Computación Administrativa", img: "/carreras/PSistemas-computacion.jpg", slug: "/sistemas" },
+  { title: "Administración Turística y Hotelería", img: "/carreras/PTurismo.jpg", slug: "/turistica" },
+  { title: "Administración de Empresas", img: "/carreras/PAdministracion.jpg", slug: "/admin-empresas" },
+  { title: "Contaduría Pública", img: "/carreras/PContaduria.jpg", slug: "/contaduria" },
+  { title: "Ingeniería Comercial", img: "/carreras/PIngenieria-comercial.jpg", slug: "/ing-comercial" },
   { title: "Derecho", img: "/carreras/PDerecho.jpg", slug: "/derecho" }
 ];
 
@@ -60,7 +60,7 @@ const WhyChooseUs = () => {
   <div className="grid grid-cols-2 gap-4">
     {careers.slice(groupIndex * 4, groupIndex * 4 + 4).map((career, index) => (
       <Link 
-        href={`/pregrado/${career.slug}`} 
+        href={`/carreras/${career.slug}`} 
         key={career.slug} 
         className="relative block rounded-xl overflow-hidden shadow-lg group"
       >

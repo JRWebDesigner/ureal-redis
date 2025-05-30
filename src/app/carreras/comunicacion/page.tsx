@@ -48,87 +48,87 @@ export default function PageCarrera(){
   const [showModal, setShowModal] = useState(false)
   const [semestreSeleccionado, setSemestreSeleccionado] = useState(0)
   const semestres = [
-    {
+  {
     nombre: "Primer Semestre",
     materias: [
-      { codigo: "MAT100-1", nombre: "Matemáticas I" },
+      { codigo: "SOC100-1", nombre: "Introducción a la Sociología" },
       { codigo: "LEN100-1", nombre: "Lenguaje y Redacción en Español" },
       { codigo: "MET100-1", nombre: "Métodos y Técnicas de Estudio" },
-      { codigo: "ADM100-1", nombre: "Administración" },
-      { codigo: "CON100-1", nombre: "Contabilidad Básica" },
-      { codigo: "ECO100-1", nombre: "Principios de Microeconomía" },
+      { codigo: "ED100-1", nombre: "Edición I" },
+      { codigo: "PSI100-1", nombre: "Psicología de la comunicación" },
+      { codigo: "COM100-1", nombre: "Introducción a la comunicación" },
       { codigo: "ENG100-1", nombre: "Inglés I" }
     ]
   },
   {
     nombre: "Segundo Semestre",
     materias: [
-      { codigo: "DER101-2", nombre: "Derecho Comercial y Administrativo" },
-      { codigo: "ECO101-2", nombre: "Principios de Macroeconomía" },
-      { codigo: "MAT101-2", nombre: "Matemáticas II" },
-      { codigo: "FIN101-2", nombre: "Finanzas I" },
-      { codigo: "CON101-2", nombre: "Contabilidad Intermedia" },
-      { codigo: "PSI101-2", nombre: "Psicología Organizacional" },
+      { codigo: "COI101-2", nombre: "Comunicación intercultural" },
+      { codigo: "COM101-2", nombre: "Teorías de la comunicación" },
+      { codigo: "LEI101-2", nombre: "Lenguaje de la imagen I" },
+      { codigo: "EST101-2", nombre: "Estadística social" },
+      { codigo: "CON101-2", nombre: "Lenguaje y Comunicación, semiología y semántica" },
+      { codigo: "SON101-2", nombre: "Instalación y operación de equipos audiovisuales" },
       { codigo: "ENG101-2", nombre: "Inglés II" }
     ]
   },
   {
     nombre: "Tercer Semestre",
     materias: [
-      { codigo: "COM101-3", nombre: "Computación para la Administración" },
-      { codigo: "CON102-3", nombre: "Contabilidad de Costos" },
-      { codigo: "FIN102-3", nombre: "Finanzas II" },
-      { codigo: "MER101-3", nombre: "Mercadotecnia" },
-      { codigo: "CDA101-3", nombre: "Estadística Administrativa" },
-      { codigo: "RHH101-3", nombre: "Recursos Humanos" },
+      { codigo: "SON102-3", nombre: "Teoría del sonido" },
+      { codigo: "FOT103-3", nombre: "Fotografía" },
+      { codigo: "RAD102-3", nombre: "Radiotécnicas I" },
+      { codigo: "LEI102-3", nombre: "Lenguaje de la imagen II" },
+      { codigo: "LEN102-3", nombre: "Redacción periodística" },
+      { codigo: "COR102-3", nombre: "Comunicación organizacional" },
       { codigo: "ENG102-3", nombre: "Inglés III" }
     ]
   },
   {
     nombre: "Cuarto Semestre",
     materias: [
-      { codigo: "FEP104-4", nombre: "Formulación y Evaluación de Proyectos" },
-      { codigo: "EDS101-4", nombre: "Ecología y Desarrollo Sostenible" },
-      { codigo: "DER104-4", nombre: "Legislación Aduanera" },
-      { codigo: "COI101-4", nombre: "Comunidad Intercultural" },
-      { codigo: "ANI103-4", nombre: "Ambiente de Negocios Internacionales" },
-      { codigo: "CDA102-4", nombre: "Tec. Cuan. para la Toma de Decisiones" },
+      { codigo: "ED101-4", nombre: "Edición II" },
+      { codigo: "LEG103-4", nombre: "Legislación en comunicación" },
+      { codigo: "CI103-4", nombre: "Lenguaje cinematográfico" },
+      { codigo: "TEV103-4", nombre: "Tv y video I" },
+      { codigo: "LEN103-4", nombre: "Técnicas de periodismo especializado" },
+      { codigo: "SON103-4", nombre: "Operación técnica del sonido" },
       { codigo: "ENG103-4", nombre: "Inglés IV" }
     ]
   },
   {
     nombre: "Quinto Semestre",
     materias: [
-      { codigo: "DER105-5", nombre: "Comercio Exterior" },
-      { codigo: "IDM104-5", nombre: "Investigación de Mercados I" },
-      { codigo: "CON103-5", nombre: "Contabilidad Administrativa" },
-      { codigo: "ADF105-5", nombre: "Administración Financiera" },
-      { codigo: "CDA103-5", nombre: "Análisis de Decisiones" },
-      { codigo: "ECO104-5", nombre: "Economía Política Internacional" },
+      { codigo: "CI104-5", nombre: "Producción cinematográfica" },
+      { codigo: "RAD104-5", nombre: "Radiotécnicas II" },
+      { codigo: "TEV104-5", nombre: "Tv y video II" },
+      { codigo: "ED102-5", nombre: "Edición III" },
+      { codigo: "GMA104-5", nombre: "Guión para medios audiovisuales" },
+      { codigo: "TEC104-5", nombre: "Teoría del color" },
       { codigo: "ENG104-5", nombre: "Inglés V" }
     ]
   },
   {
     nombre: "Sexto Semestre",
     materias: [
-      { codigo: "ANI105-6", nombre: "Análisis de Mercados Internacionales" },
-      { codigo: "CDA104-6", nombre: "Administración de Operaciones" },
-      { codigo: "ECO103-6", nombre: "Organismos y Regulaciones Int." },
-      { codigo: "ADF106-6", nombre: "Finanzas Internacionales" },
-      { codigo: "ANI104-6", nombre: "Sistemas y Operaciones de Comercio Int." },
-      { codigo: "DDE101-6", nombre: "Desarrollo de Emprendedores" },
+      { codigo: "CI105-6", nombre: "Crítica cinematográfica" },
+      { codigo: "COP105-6", nombre: "Comunicación publicitaria" },
+      { codigo: "DIB105-6", nombre: "Dibujo, tratamiento y animación 2D" },
+      { codigo: "PRO105-6", nombre: "Producción de multimedias" },
+      { codigo: "TEV105-6", nombre: "Tv y video III" },
+      { codigo: "CAR101-6", nombre: "Comunicación y arte" },
       { codigo: "ENG105-6", nombre: "Inglés VI" }
     ]
   },
   {
     nombre: "Séptimo Semestre",
     materias: [
-      { codigo: "VEP107-7", nombre: "Valores en el Ejercicio Profesional" },
-      { codigo: "ANI106-7", nombre: "Análisis de Competitividad Internacional" },
-      { codigo: "CDA105-7", nombre: "Logística Empresarial" },
-      { codigo: "DER107-7", nombre: "Seminario de Derecho Comercial I y II" },
-      { codigo: "DER106-7", nombre: "Merceología Aduanera" },
-      { codigo: "ECO104-7", nombre: "Seminario Integrador de Comercio Int." },
+      { codigo: "TEV106-7", nombre: "Producción televisiva" },
+      { codigo: "TEV107-7", nombre: "Prácticas de realización de programas" },
+      { codigo: "VEP107-7", nombre: "Valores en el ejercicio profesional" },
+      { codigo: "COP106-7", nombre: "Diseño de campañas persuasivas" },
+      { codigo: "DIB106-7", nombre: "Dibujo, tratamiento y animación 3D" },
+      { codigo: "LOC106-7", nombre: "Locución para medios audiovisuales" },
       { codigo: "SDG107-7", nombre: "Seminario de Grado I" }
     ]
   },
@@ -142,15 +142,17 @@ export default function PageCarrera(){
   {
     nombre: "Materias Complementarias",
     materias: [
-      { codigo: "TDC107", nombre: "Técnicas de Consultoría" },
-      { codigo: "PEE-101", nombre: "Política y Estrategia Empresarial" },
-      { codigo: "MDS106", nombre: "Mercadotecnia de Servicios" }
+      { codigo: "PUB107-6", nombre: "Publicidad I" },
+      { codigo: "DDE101-6", nombre: "Desarrollo de emprendedores" },
+      { codigo: "INA100", nombre: "Idioma Nativo Aymara (originario)" },
+      { codigo: "INQ100", nombre: "Idioma Nativo Quechua (originario)" }
     ]
   }
 ];
+
   return(
     <>
-      <Hero2 titulo="Tu futuro inicia hoy, tu marca será internacional"/>
+      <Hero2 titulo="Conoce como crear contenido de calidad y como difundirlo"/>
       
       <motion.section 
         initial="hidden"
@@ -182,7 +184,7 @@ export default function PageCarrera(){
             className='text-4xl md:text-5xl'
             variants={itemVariants}
           >
-            COMERCIO INTERNACIONAL
+            COMUNICACIÓN AUDIOVISUAL
           </motion.h2>
           <motion.div 
             className="pl-4 border-l-2 border-white flex flex-col gap-7"
@@ -192,7 +194,7 @@ export default function PageCarrera(){
               className="opacity-70"
               variants={itemVariants}
             >
-              Estudiar la carrera de Comercio Internacional es una excelente opción para aquellos interesados en desempeñarse en un entorno globalizado, ya que brinda un conjunto de habilidades y competencias que son esenciales para manejar los intercambios comerciales entre países.
+              En un mundo donde la información y la automatización se han convertido en activos estratégicos para el éxito de las organizaciones, esta carrera se orienta a consolidar competencias que permitan a los futuros egresados diseñar, implementar y administrar sistemas de información que optimicen los procesos y potencien la competitividad de las empresas.
             </motion.p>
             <motion.h3 
               className="text-3xl text-semibold"
@@ -205,9 +207,9 @@ export default function PageCarrera(){
               variants={itemVariants}
             >
               🔹 Misión:<br />
-               Formar profesionales éticos, emprendedores y con pensamiento crítico, capacitados en comercio internacional para gestionar eficientemente transacciones globales, con conocimientos en negociación, logística, leyes internacionales y tecnología.<br />
+               Formar comunicadores audiovisuales integrales con sólidas competencias técnicas, analíticas y creativas, capaces de diseñar, producir y gestionar proyectos en el ámbito audiovisual con responsabilidad ética y compromiso social.<br />
               🔹 Visión:<br />
-               Ser líderes en la formación de expertos en comercio internacional, comprometidos con el desarrollo del país, fomentando la innovación, el liderazgo y la sostenibilidad para enfrentar los desafíos del mercado global.
+               Posicionarse como un referente en la formación de profesionales capaces de transformar y liderar la industria de los medios mediante la innovación, la interdisciplinariedad y la actualización constante.
             </motion.p>
             <motion.div variants={itemVariants}>
               <Link href="https://wa.link/51zpya" className='mx-auto bg-white px-10 py-3 text-black font-semibold rounded-3xl hover:scale-110 duration-300'>
@@ -235,7 +237,7 @@ export default function PageCarrera(){
           className='max-w-6xl mx-auto'
           variants={itemVariants}
         >
-         Formamos profesionales con visión global, listos para conquistar mercados internacionales. Aprenderás a negociar, gestionar exportaciones, dominar leyes y tecnología, ¡todo con actitud emprendedora y compromiso con el desarrollo del país!
+         Formar comunicadores audiovisuales integrales, con sólidos conocimientos científicos, humanísticos y técnicos, capaces de intervenir creativamente en la producción, dirección y gestión de contenidos audiovisuales. Esta formación les permitirá impulsar la convergencia digital y la comunicación en todas sus formas, respondiendo a las demandas de un entorno mediático en constante evolución.
         </motion.p> 
         <motion.div 
           className='flex gap-10 justify-center items-center flex-wrap my-7'
@@ -247,8 +249,8 @@ export default function PageCarrera(){
             className='relative bg-[url(/carreras/comercio/img4.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Conocimiento del Mercado Global</h3>
-            <p className='relative z-10 opacity-80'>Comprende las tendencias y necesidades del mercado comercial externo, lo que le permite identificar oportunidades y desafíos en el ámbito internacional.
+            <h3 className='relative z-10 text-2xl font-bold'>Desarrollar competencias técnicas y creativas</h3>
+            <p className='relative z-10 opacity-80'>Proporcionándoles herramientas y conocimientos, para que puedan crear productos de alta calidad que conecten con diversas audiencias.
             </p>
           </motion.div>
           <motion.div 
@@ -257,8 +259,8 @@ export default function PageCarrera(){
             className='relative bg-[url(/carreras/comercio/img5.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Dominio de Trámites y Logística</h3>
-            <p className='relative z-10 opacity-80'>Domina aduanas, transporte global y tesorería para que el comercio entre países fluya sin fronteras.
+            <h3 className='relative z-10 text-2xl font-bold'>Fomentar una visión crítica y ética</h3>
+            <p className='relative z-10 opacity-80'>Sensibilizando  sobre la responsabilidad en la creación y difusión de contenidos
             </p>
           </motion.div>
           <motion.div 
@@ -267,8 +269,8 @@ export default function PageCarrera(){
             className='relative bg-[url(/carreras/comercio/img7.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Gestión del Comercio Electrónico</h3>
-            <p className='relative z-10 opacity-80'>Impulsa el e-commerce global con estrategias innovadoras que llevan productos al mundo
+            <h3 className='relative z-10 text-2xl font-bold'>Liderares en la transformación digital</h3>
+            <p className='relative z-10 opacity-80'>En el ámbito audiovisual, capacitándolos para adaptarse a las nuevas tecnologías y tendencias del mercado, y para gestionar proyectos que integren diversos medios y plataformas de comunicación.
             </p>
           </motion.div>        
         </motion.div>     
@@ -285,13 +287,13 @@ export default function PageCarrera(){
           className='text-4xl font-bold text-center'
           variants={itemVariants}
         >
-          Perfil del Profesional en Comercio Internacional
+          Perfil  del Profesional Licenciatura en Comunicación Audiovisual
         </motion.h2>
         <motion.p 
           className='max-w-6xl mx-auto opacity-80 text-center'
           variants={itemVariants}
         >
-          El egresado de Comercio Internacional de la universidad  está preparado para gestionar estrategias comerciales globales, dirigir empresas y promover el desarrollo sostenible con un enfoque ético y proactivo.
+          El egresado en Comunicación Audiovisual es un profesional integral con sólida formación técnica, creativa y ética, capaz de diseñar, producir y gestionar contenidos audiovisuales innovadores que responden a las demandas de un mercado globalizado. Su formación le permite intervenir de manera efectiva en la producción, dirección y gestión de proyectos audiovisuales, impulsando la convergencia digital y la comunicación en todas sus formas.
         </motion.p>
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 text-[#1d1d1b]"
@@ -302,9 +304,9 @@ export default function PageCarrera(){
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Visión Global y Conocimiento Estratégico</h3>
+              <h3 className="font-bold text-lg">Dominio Técnico y Creativo</h3>
               <p className="text-sm mt-2">
-                El egresado comprende a fondo la realidad social, económica y jurídica del entorno internacional, lo que le permite analizar fenómenos globales y diseñar estrategias de comercio exterior competitivas y sostenibles. Domina las teorías del comercio y relaciones internacionales, aplicándolas de manera efectiva en escenarios complejos y cambiantes.
+                Posee amplios conocimientos en producción, dirección y gestión de contenidos audiovisuales, con un enfoque en la innovación y el uso de tecnologías digitales avanzadas.
               </p>
             </div>
           </motion.div>
@@ -313,10 +315,10 @@ export default function PageCarrera(){
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Promotor de la Internacionalización Empresarial
+              <h3 className="font-bold text-lg">Liderazgo y Gestión de Proyectos
 </h3>
               <p className="text-sm mt-2">
-                Actúa como asesor clave en procesos de exportación e importación, identificando oportunidades en mercados diversos. Evalúa y formula proyectos de internacionalización con enfoque innovador, adaptándose a los diferentes entornos comerciales y culturales.
+                Demuestra habilidades para liderar equipos creativos y gestionar proyectos audiovisuales, integrando distintas disciplinas para la realización de producciones de calidad.
               </p>
             </div>
           </motion.div>
@@ -325,9 +327,9 @@ export default function PageCarrera(){
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Habilidades Directivas y de Gestión Empresarial</h3>
+              <h3 className="font-bold text-lg">Pensamiento Crítico y Adaptabilidad</h3>
               <p className="text-sm mt-2">
-                Está capacitado para liderar, gestionar y controlar empresas y proyectos vinculados al comercio internacional. Posee competencias en dirección estratégica, planificación operativa y toma de decisiones que potencian la eficiencia de las operaciones internacionales
+                Posee un pensamiento crítico y analítico que le permite interpretar y transformar la realidad mediática, adaptándose a entornos cambiantes y anticipando tendencias del mercado audiovisual.
               </p>
             </div>
           </motion.div>
@@ -336,9 +338,9 @@ export default function PageCarrera(){
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Ética Profesional y Sensibilidad Intercultural</h3>
+              <h3 className="font-bold text-lg">Comunicación Eficaz y Responsabilidad Social</h3>
               <p className="text-sm mt-2">
-                Demuestra un fuerte compromiso ético y social, con una actitud proactiva frente a los desafíos del comercio global. Su sensibilidad intercultural le permite establecer relaciones comerciales sólidas y exitosas, reconociendo y respetando las particularidades culturales y económicas de los distintos bloques internacionales.
+                Se comunica de manera efectiva tanto en contextos tradicionales como en plataformas digitales, con dominio de un segundo idioma, y se rige por altos estándares éticos y de responsabilidad social, orientando su trabajo a la generación de impacto cultural y educativo.  
               </p>
             </div>
           </motion.div>
@@ -513,7 +515,7 @@ export default function PageCarrera(){
           className='text-4xl font-bold text-center mb-8'
           variants={itemVariants}
         >
-          Domina tu futuro con Finanzas
+          PRODUCE CONTENIDO CONOCE NUESTRA RADIO PODCAST
         </motion.h2>
         <motion.div 
           className='flex justify-center items-center flex-wrap gap-10 px-16'
@@ -553,7 +555,7 @@ export default function PageCarrera(){
           className={`${styles.textoConImagen} text-5xl md:text-8xl text-center`}
           variants={itemVariants}
         >
-          VISITAS
+          Podcast
         </motion.h2>
         <motion.div 
           className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 mt-10"
@@ -563,30 +565,40 @@ export default function PageCarrera(){
             className="text-primary font-bold text-2xl leading-tight w-full md:w-1/3"
             variants={slideInFromLeft}
           >
-            Explora el Comercio Internacional en Terreno Real
+            Conoce nuestra radio podcast
           </motion.div>
           <motion.div 
             className="text-[#555] w-full md:w-2/3 space-y-2 border-t-4 md:border-t-0 md:border-l-4 border-primary pl-4"
             variants={slideInFromRight}
           >
             <p>
-              ¡En la carrera de Comercio Internacional de la Universidad Real de la Cámara Nacional de Comercio, no solo estudias el mundo... lo vives!
+              ¡En la carrera de Comunicación Audiovisual de la Universidad Real de la Cámara Nacional de Comercio, ganaras bastante experiencia con nuestras actividades de Recreación.
             </p>
             <br />
             <p>
-              Nuestros estudiantes cruzan fronteras y se embarcan en viajes académicos internacionales a países como Chile y Perú, donde visitan puertos estratégicos como el de Arica, zonas francas, centros logísticos y aduanas. Ahí, todo lo aprendido en clases cobra vida.
+              Nuestros estudiantes tienen una radio podcast donde crean contenido para YouTube
+   
+
+   
             </p>
             <br />
             <p>
-              Suben a buques de carga, analizan procesos reales de exportación e importación, interactúan con operadores logísticos y entienden cómo se mueve la economía global desde el terreno.
+              
+   - Los estudiantes están constantemente creando contenido para redes
             </p>
             <br />
             <p>
-              Pero no es solo teoría: estos viajes son una aventura profesional y cultural, donde cada paso fortalece su perfil internacional y los conecta con el ritmo dinámico del comercio exterior.
+              
+   - Además se cuenta con un estudio de grabación
+
             </p>
             <br />
             <p>
-              Vive la experiencia. Aprende con acción. Conviértete en un verdadero profesional del comercio internacional.
+              - Además que prontamente habrán actividades de competencia de Cortometraje.
+            </p>
+            <br />
+            <p>
+            - Participación en las redes de la Universidad, como Facebook, TikTok, etc
             </p>
           </motion.div>
         </motion.div>

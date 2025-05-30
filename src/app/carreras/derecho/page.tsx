@@ -150,7 +150,7 @@ export default function PageCarrera(){
 ];
   return(
     <>
-      <Hero2 titulo="Tu futuro inicia hoy, tu marca será internacional"/>
+      <Hero2 titulo="Defiende los derechos humanos, con tus conocimientos"/>
       
       <motion.section 
         initial="hidden"
@@ -182,7 +182,7 @@ export default function PageCarrera(){
             className='text-4xl md:text-5xl'
             variants={itemVariants}
           >
-            COMERCIO INTERNACIONAL
+            DERECHO
           </motion.h2>
           <motion.div 
             className="pl-4 border-l-2 border-white flex flex-col gap-7"
@@ -192,7 +192,7 @@ export default function PageCarrera(){
               className="opacity-70"
               variants={itemVariants}
             >
-              Estudiar la carrera de Comercio Internacional es una excelente opción para aquellos interesados en desempeñarse en un entorno globalizado, ya que brinda un conjunto de habilidades y competencias que son esenciales para manejar los intercambios comerciales entre países.
+              Estudiar Derecho en la UREAL te brinda una formación integral, orientada a la excelencia académica y al compromiso social. La universidad promueve el desarrollo de habilidades técnicas y éticas, preparando a los estudiantes para enfrentar los desafíos legales del siglo XXI con creatividad, disciplina y eficiencia. Además, ofrece oportunidades de movilidad estudiantil, prácticas profesionales en empresas afiliadas y una sólida formación en idiomas, lo que aumenta la empleabilidad de sus egresados.
             </motion.p>
             <motion.h3 
               className="text-3xl text-semibold"
@@ -205,9 +205,9 @@ export default function PageCarrera(){
               variants={itemVariants}
             >
               🔹 Misión:<br />
-               Formar profesionales éticos, emprendedores y con pensamiento crítico, capacitados en comercio internacional para gestionar eficientemente transacciones globales, con conocimientos en negociación, logística, leyes internacionales y tecnología.<br />
+                Formar profesionales del Derecho con una sólida base ética y técnica, capaces de asumir roles de liderazgo en el ámbito jurídico, comprometidos con la justicia, la equidad y el respeto a los derechos humanos.<br />
               🔹 Visión:<br />
-               Ser líderes en la formación de expertos en comercio internacional, comprometidos con el desarrollo del país, fomentando la innovación, el liderazgo y la sostenibilidad para enfrentar los desafíos del mercado global.
+               Ser una carrera reconocida por su excelencia académica, su contribución al desarrollo del Estado de Derecho y su compromiso con la formación de profesionales íntegros y comprometidos con la sociedad.
             </motion.p>
             <motion.div variants={itemVariants}>
               <Link href="https://wa.link/51zpya" className='mx-auto bg-white px-10 py-3 text-black font-semibold rounded-3xl hover:scale-110 duration-300'>
@@ -235,7 +235,7 @@ export default function PageCarrera(){
           className='max-w-6xl mx-auto'
           variants={itemVariants}
         >
-         Formamos profesionales con visión global, listos para conquistar mercados internacionales. Aprenderás a negociar, gestionar exportaciones, dominar leyes y tecnología, ¡todo con actitud emprendedora y compromiso con el desarrollo del país!
+         Formar abogados con una sólida formación teórica y práctica, capaces de desempeñarse con eficacia en diversas áreas del Derecho, contribuyendo al fortalecimiento del Estado de Derecho y al bienestar social.
         </motion.p> 
         <motion.div 
           className='flex gap-10 justify-center items-center flex-wrap my-7'
@@ -247,8 +247,8 @@ export default function PageCarrera(){
             className='relative bg-[url(/carreras/comercio/img4.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Conocimiento del Mercado Global</h3>
-            <p className='relative z-10 opacity-80'>Comprende las tendencias y necesidades del mercado comercial externo, lo que le permite identificar oportunidades y desafíos en el ámbito internacional.
+            <h3 className='relative z-10 text-2xl font-bold'>Conocimiento Teórico</h3>
+            <p className='relative z-10 opacity-80'>Proporcionar conocimientos profundos en las distintas ramas del Derecho, incluyendo Derecho Civil, Penal, Constitucional, Administrativo e Internacional.
             </p>
           </motion.div>
           <motion.div 
@@ -257,9 +257,8 @@ export default function PageCarrera(){
             className='relative bg-[url(/carreras/comercio/img5.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Dominio de Trámites y Logística</h3>
-            <p className='relative z-10 opacity-80'>Domina aduanas, transporte global y tesorería para que el comercio entre países fluya sin fronteras.
-            </p>
+            <h3 className='relative z-10 text-2xl font-bold'>Desarrollar habilidades prácticas</h3>
+            <p className='relative z-10 opacity-80'>A través de la participación en clínicas jurídicas, pasantías y simulaciones de juicios.
           </motion.div>
           <motion.div 
             variants={itemVariants}
@@ -267,13 +266,12 @@ export default function PageCarrera(){
             className='relative bg-[url(/carreras/comercio/img7.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Gestión del Comercio Electrónico</h3>
-            <p className='relative z-10 opacity-80'>Impulsa el e-commerce global con estrategias innovadoras que llevan productos al mundo
+            <h3 className='relative z-10 text-2xl font-bold'>Fomentar valores éticos</h3>
+            <p className='relative z-10 opacity-80'> Preparando a los estudiantes para actuar con integridad y responsabilidad en su ejercicio profesional.
             </p>
           </motion.div>        
         </motion.div>     
-      </motion.section>
-      
+      </motion.section>    
       <motion.section 
         initial="hidden"
         whileInView="visible"
@@ -285,13 +283,13 @@ export default function PageCarrera(){
           className='text-4xl font-bold text-center'
           variants={itemVariants}
         >
-          Perfil del Profesional en Comercio Internacional
+          Perfil  del Profesional Licenciatura en Derecho
         </motion.h2>
         <motion.p 
           className='max-w-6xl mx-auto opacity-80 text-center'
           variants={itemVariants}
         >
-          El egresado de Comercio Internacional de la universidad  está preparado para gestionar estrategias comerciales globales, dirigir empresas y promover el desarrollo sostenible con un enfoque ético y proactivo.
+          El egresado de la carrera de Derecho en la UREAL es un profesional íntegro, con una sólida formación teórica y práctica, capaz de desempeñarse con eficacia en diversas áreas del Derecho y comprometido con la justicia y el bienestar social.
         </motion.p>
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 text-[#1d1d1b]"
@@ -302,9 +300,9 @@ export default function PageCarrera(){
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Visión Global y Conocimiento Estratégico</h3>
+              <h3 className="font-bold text-lg">Defensa de los Derechos Humanos y la Justicia Social</h3>
               <p className="text-sm mt-2">
-                El egresado comprende a fondo la realidad social, económica y jurídica del entorno internacional, lo que le permite analizar fenómenos globales y diseñar estrategias de comercio exterior competitivas y sostenibles. Domina las teorías del comercio y relaciones internacionales, aplicándolas de manera efectiva en escenarios complejos y cambiantes.
+                El egresado de la UREAL se compromete a defender los derechos fundamentales de las personas, promoviendo la justicia social y el respeto a la dignidad humana en su ejercicio profesional.
               </p>
             </div>
           </motion.div>
@@ -313,10 +311,10 @@ export default function PageCarrera(){
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Promotor de la Internacionalización Empresarial
+              <h3 className="font-bold text-lg">Aplicación Estratégica del Ordenamiento Jurídico
 </h3>
               <p className="text-sm mt-2">
-                Actúa como asesor clave en procesos de exportación e importación, identificando oportunidades en mercados diversos. Evalúa y formula proyectos de internacionalización con enfoque innovador, adaptándose a los diferentes entornos comerciales y culturales.
+                Posee la capacidad de interpretar y aplicar las normas legales nacionales e internacionales de manera estratégica, adaptándose a las diversas situaciones jurídicas que se presenten.
               </p>
             </div>
           </motion.div>
@@ -325,9 +323,9 @@ export default function PageCarrera(){
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Habilidades Directivas y de Gestión Empresarial</h3>
+              <h3 className="font-bold text-lg">Resolución de Conflictos con Ética y Eficiencia</h3>
               <p className="text-sm mt-2">
-                Está capacitado para liderar, gestionar y controlar empresas y proyectos vinculados al comercio internacional. Posee competencias en dirección estratégica, planificación operativa y toma de decisiones que potencian la eficiencia de las operaciones internacionales
+                Está preparado para resolver disputas legales mediante métodos tradicionales y alternativos, como la mediación y el arbitraje, actuando siempre con ética y eficiencia.
               </p>
             </div>
           </motion.div>
@@ -336,9 +334,9 @@ export default function PageCarrera(){
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Ética Profesional y Sensibilidad Intercultural</h3>
+              <h3 className="font-bold text-lg">Capacidad de Investigación y Adaptación Continua</h3>
               <p className="text-sm mt-2">
-                Demuestra un fuerte compromiso ético y social, con una actitud proactiva frente a los desafíos del comercio global. Su sensibilidad intercultural le permite establecer relaciones comerciales sólidas y exitosas, reconociendo y respetando las particularidades culturales y económicas de los distintos bloques internacionales.
+               Demuestra habilidades para la investigación jurídica, utilizando tecnologías de la información y comunicación, y se adapta a los cambios normativos y sociales, asegurando una práctica profesional actualizada y competente.
               </p>
             </div>
           </motion.div>
@@ -513,7 +511,7 @@ export default function PageCarrera(){
           className='text-4xl font-bold text-center mb-8'
           variants={itemVariants}
         >
-          Domina tu futuro con Finanzas
+          DEFIENDE
         </motion.h2>
         <motion.div 
           className='flex justify-center items-center flex-wrap gap-10 px-16'
@@ -553,7 +551,7 @@ export default function PageCarrera(){
           className={`${styles.textoConImagen} text-5xl md:text-8xl text-center`}
           variants={itemVariants}
         >
-          VISITAS
+          Abogado ejecutivo
         </motion.h2>
         <motion.div 
           className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 mt-10"
@@ -563,30 +561,39 @@ export default function PageCarrera(){
             className="text-primary font-bold text-2xl leading-tight w-full md:w-1/3"
             variants={slideInFromLeft}
           >
-            Explora el Comercio Internacional en Terreno Real
+            En la Universidad Real, formamos abogados ejecutivos.
           </motion.div>
           <motion.div 
             className="text-[#555] w-full md:w-2/3 space-y-2 border-t-4 md:border-t-0 md:border-l-4 border-primary pl-4"
             variants={slideInFromRight}
           >
             <p>
-              ¡En la carrera de Comercio Internacional de la Universidad Real de la Cámara Nacional de Comercio, no solo estudias el mundo... lo vives!
+              En la U.Real nos comprometemos a formar abogados que no solo dominen la teoría jurídica, sino que también posean habilidades prácticas esenciales para liderar en el mundo empresarial y social.
             </p>
             <br />
             <p>
-              Nuestros estudiantes cruzan fronteras y se embarcan en viajes académicos internacionales a países como Chile y Perú, donde visitan puertos estratégicos como el de Arica, zonas francas, centros logísticos y aduanas. Ahí, todo lo aprendido en clases cobra vida.
+              💡 ¿Qué significa ser un abogado ejecutivo?<br/>
+Ser un abogado ejecutivo implica:
             </p>
             <br />
             <p>
-              Suben a buques de carga, analizan procesos reales de exportación e importación, interactúan con operadores logísticos y entienden cómo se mueve la economía global desde el terreno.
+              Liderar con visión estratégica: Capacidad para tomar decisiones informadas que guíen a la organización hacia el éxito.
             </p>
             <br />
             <p>
-              Pero no es solo teoría: estos viajes son una aventura profesional y cultural, donde cada paso fortalece su perfil internacional y los conecta con el ritmo dinámico del comercio exterior.
+              Gestionar equipos multidisciplinarios: Coordinar y dirigir equipos de trabajo, aprovechando las fortalezas individuales para alcanzar objetivos comunes.
+            </p>
+            <br />
+            <p>             
+              Comunicar eficazmente: Transmitir ideas y argumentos de manera clara y persuasiva, tanto de forma oral como escrita.
             </p>
             <br />
             <p>
-              Vive la experiencia. Aprende con acción. Conviértete en un verdadero profesional del comercio internacional.
+              Adaptarse al entorno cambiante: Ser flexible y resiliente ante los desafíos y transformaciones del mercado.
+            </p>
+            <br />
+            <p>
+              Tomar decisiones éticas y responsables: Actuar con integridad y compromiso social en todas las acciones profesionales.
             </p>
           </motion.div>
         </motion.div>

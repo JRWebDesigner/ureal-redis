@@ -166,12 +166,12 @@ export default function PageCarrera(){
            className='relative flex justify-center items-center mb-5'
          >
             <motion.img 
-              src='/carreras/admin-empresas/img1.png' 
+              src='/carreras/admin-empresas/img1.webp' 
               className='relative z-20 rounded-3xl h-[400px] md:h-[500px] max-w-1/2 object-cover'
               whileHover={{ scale: 1.02 }}
             />
             <motion.img 
-              src='/carreras/admin-empresas/img2.png' 
+              src='/carreras/admin-empresas/img2.webp' 
               className='-ml-22 rounded-3xl h-[470px] md:h-[570px] max-w-1/2 object-cover'
               whileHover={{ scale: 1.02 }}
             />
@@ -248,7 +248,7 @@ export default function PageCarrera(){
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/admin-empresas/img4.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/admin-empresas/img4.webp)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
             <h3 className='relative z-10 text-2xl font-bold'>Desarrollar habilidades emprendedoras</h3>
@@ -258,7 +258,7 @@ export default function PageCarrera(){
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/admin-empresas/img5.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/admin-empresas/img5.webp)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
             <h3 className='relative z-10 text-2xl font-bold'>Promover la investigación aplicada</h3>
@@ -268,7 +268,7 @@ export default function PageCarrera(){
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/admin-empresas/img7.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/admin-empresas/img7.webp)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
             <h3 className='relative z-10 text-2xl font-bold'>Fortalecer la toma de decisiones</h3>
@@ -527,7 +527,7 @@ export default function PageCarrera(){
           variants={containerVariants}
         >
           <motion.img 
-            src='/carreras/admin-empresas/img3.jpg' 
+            src='/carreras/admin-empresas/img3.webp' 
             className='rounded-3xl w-[80%] h-[330px] md:w-[670px] md:h-[670px] object-cover'
             variants={slideInFromLeft}
             whileHover={{ scale: 1.02 }}
@@ -536,7 +536,7 @@ export default function PageCarrera(){
             className='flex justify-around md:grid grid-cols-2 grid-rows-2 items-center gap-10 flex-wrap'
             variants={containerVariants}
           >
-            {['/carreras/admin-empresas/img4.jpg', '/carreras/admin-empresas/img5.jpg', '/carreras/admin-empresas/img6.jpg', '/carreras/admin-empresas/img7.jpg'].map((img, index) => (
+            {['/carreras/admin-empresas/img4.webp', '/carreras/admin-empresas/img5.webp', '/carreras/admin-empresas/img6.webp', '/carreras/admin-empresas/img7.webp'].map((img, index) => (
               <motion.img 
                 key={index}
                 src={img}
