@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
             768: { slidesPerView: 1 },
             1024: { slidesPerView: 1 }
           }}
-          className="w-[100%] md:w-[48%] block p-4"
+          className="w-[100%] md:w-[48%] block md:p-4"
         >
           {[0, 1, 2].map((groupIndex) => (
             <SwiperSlide key={groupIndex}>
