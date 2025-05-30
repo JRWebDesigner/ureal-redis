@@ -29,11 +29,60 @@ export default function SuccessSection() {
     <section className="py-12 px-6 max-w-6xl mx-auto">
             
       <div className="grid md:grid-cols-2 gap-10">
-           <div className="grid grid-cols-2 gap-[2%] grid-rows-2">
-  <img src='/Images/exito1.jpg' className="bg-black h-[300px] bg-cover rounded-3xl" />
-  <img src='/Images/exito2.jpg' className="bg-black h-[200px] bg-cover rounded-3xl" />    <img src='/Images/exito3.jpg' className="bg-black h-[200px] bg-cover rounded-3xl" />
-  <img src='/Images/exito4.jpg' className="bg-black h-[200px] bg-cover rounded-3xl" />
-</div>        
+           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-4">
+      {/* Top left image */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        className="col-span-2 md:col-span-2"
+      >
+        <img
+          src="/exito1.jpg"
+          alt="No te detengas"
+          className="rounded-xl w-full h-auto"
+        />
+      </motion.div>
+
+      {/* Top right image */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <img
+          src="/exito2.jpg"
+          alt="Graduation"
+          className="rounded-xl w-full h-auto"
+        />
+      </motion.div>
+
+      {/* Bottom left image */}
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <img
+          src="/exito3.jpg"
+          alt="Bienvenid@ a tu historia universitaria"
+          className="rounded-xl w-full h-auto"
+        />
+      </motion.div>
+
+      {/* Bottom right image */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+      >
+        <img
+          src="/exito4.jpg"
+          alt="Paga tus cuotas en segundos"
+          className="rounded-xl w-full h-auto"
+        />
+      </motion.div>
+    </div>
 
         {/* Características */}
         <div className="grid md:grid-cols-1 gap-8">
