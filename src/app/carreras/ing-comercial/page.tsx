@@ -164,12 +164,12 @@ export default function PageCarrera(){
            className='relative flex justify-center items-center mb-5'
          >
             <motion.img 
-              src='/carreras/comercio/img1.png' 
+              src='/carreras/ing-comercial/img1.png' 
               className='relative z-20 rounded-3xl h-[400px] md:h-[500px] max-w-1/2 object-cover'
               whileHover={{ scale: 1.02 }}
             />
             <motion.img 
-              src='/carreras/comercio/img2.png' 
+              src='/carreras/ing-comercial/img2.png' 
               className='-ml-22 rounded-3xl h-[470px] md:h-[570px] max-w-1/2 object-cover'
               whileHover={{ scale: 1.02 }}
             />
@@ -209,7 +209,7 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
               🔹 Misión:<br />
                Formar profesionales en Ingeniería Comercial con visión estratégica, liderazgo y habilidades financieras, capaces de crear, dirigir y transformar empresas en entornos nacionales e internacionales. Nuestra formación se basa en la práctica real del mundo empresarial, gracias a la vinculación directa con la Cámara Nacional de Comercio y el sector productivo.<br />
               🔹 Visión:<br />
-               Ser una carrera líder a nivel nacional en la formación de ingenieros comerciales innovadores, reconocidos por su impacto en la transformación empresarial, su compromiso con el desarrollo económico sostenible y su conexión permanente con el ecosistema empresarial boliviano e internaciona.
+               Ser una carrera líder a nivel nacional en la formación de ingenieros comerciales innovadores, reconocidos por su impacto en la transformación empresarial, su compromiso con el desarrollo económico sostenible y su conexión permanente con el ecosistema empresarial boliviano e internacional.
             </motion.p>
             <motion.div variants={itemVariants}>
               <Link href="https://wa.link/51zpya" className='mx-auto bg-white px-10 py-3 text-black font-semibold rounded-3xl hover:scale-110 duration-300'>
@@ -237,7 +237,7 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
           className='max-w-6xl mx-auto'
           variants={itemVariants}
         >
-         Formamos profesionales con visión global, listos para conquistar mercados internacionales. Aprenderás a negociar, gestionar exportaciones, dominar leyes y tecnología, ¡todo con actitud emprendedora y compromiso con el desarrollo del país!
+         Formar profesionales con una sólida formación técnica, ética y emprendedora, capaces de diseñar, implementar y evaluar estrategias comerciales innovadoras y sostenibles. Estos profesionales estarán preparados para liderar procesos de transformación en organizaciones empresariales, adaptándose a los desafíos del entorno globalizado y contribuyendo al desarrollo económico y social del país.
         </motion.p> 
         <motion.div 
           className='flex gap-10 justify-center items-center flex-wrap my-7'
@@ -246,31 +246,31 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/comercio/img4.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/ing-comercial/img4.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Conocimiento del Mercado Global</h3>
-            <p className='relative z-10 opacity-80'>Comprende las tendencias y necesidades del mercado comercial externo, lo que le permite identificar oportunidades y desafíos en el ámbito internacional.
+            <h3 className='relative z-10 text-2xl font-bold'>Formación Emprendedora</h3>
+            <p className='relative z-10 opacity-80'>Capacitar al profesional para liderar procesos de transformación, en el mercado global
             </p>
           </motion.div>
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/comercio/img5.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/ing-comercial/img5.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Dominio de Trámites y Logística</h3>
-            <p className='relative z-10 opacity-80'>Domina aduanas, transporte global y tesorería para que el comercio entre países fluya sin fronteras.
+            <h3 className='relative z-10 text-2xl font-bold'>Diseñar y ejecutar proyectos</h3>
+            <p className='relative z-10 opacity-80'>Integrando todos los conocimiento de marketing, comercio electronico. Con el fin de generar ventajas competitivas.
             </p>
           </motion.div>
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -10 }}
-            className='relative bg-[url(/carreras/comercio/img7.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
+            className='relative bg-[url(/carreras/ing-comercial/img7.jpg)] bg-cover bg-center rounded-3xl w-[380px] min-h-[300px] p-4 text-white flex justify-center items-center flex-col'
           >
             <div className='absolute bg-black/60 w-full h-full rounded-3xl' />
-            <h3 className='relative z-10 text-2xl font-bold'>Gestión del Comercio Electrónico</h3>
-            <p className='relative z-10 opacity-80'>Impulsa el e-commerce global con estrategias innovadoras que llevan productos al mundo
+            <h3 className='relative z-10 text-2xl font-bold'>Desarrollo de habilidades técnicas</h3>
+            <p className='relative z-10 opacity-80'>Capacidad de Identificar oportunidades y amenazas en el mercado globa.
             </p>
           </motion.div>        
         </motion.div>     
@@ -287,13 +287,13 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
           className='text-4xl font-bold text-center'
           variants={itemVariants}
         >
-          Perfil del Profesional en Comercio Internacional
+          Perfil Profesional del Egresado de Ingeniería Comercial
         </motion.h2>
         <motion.p 
           className='max-w-6xl mx-auto opacity-80 text-center'
           variants={itemVariants}
         >
-          El egresado de Comercio Internacional de la universidad  está preparado para gestionar estrategias comerciales globales, dirigir empresas y promover el desarrollo sostenible con un enfoque ético y proactivo.
+          El Ingeniero Comercial de la UREAL es un profesional integral, ético y emprendedor, capacitado para liderar y gestionar procesos comerciales en diversos entornos organizacionales. Su formación le permite:
         </motion.p>
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 text-[#1d1d1b]"
@@ -304,9 +304,9 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Visión Global y Conocimiento Estratégico</h3>
+              <h3 className="font-bold text-lg">Investigación y Análisis de Mercados</h3>
               <p className="text-sm mt-2">
-                El egresado comprende a fondo la realidad social, económica y jurídica del entorno internacional, lo que le permite analizar fenómenos globales y diseñar estrategias de comercio exterior competitivas y sostenibles. Domina las teorías del comercio y relaciones internacionales, aplicándolas de manera efectiva en escenarios complejos y cambiantes.
+                Capacitado para diseñar y realizar proyectos de investigación de mercado, identificando oportunidades y amenazas en el entorno global, y proponiendo mecanismos de expansión empresarial basados en datos y tendencias del mercado internacional.
               </p>
             </div>
           </motion.div>
@@ -315,10 +315,10 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Promotor de la Internacionalización Empresarial
+              <h3 className="font-bold text-lg"> Estrategias Comerciales y Ventas
 </h3>
               <p className="text-sm mt-2">
-                Actúa como asesor clave en procesos de exportación e importación, identificando oportunidades en mercados diversos. Evalúa y formula proyectos de internacionalización con enfoque innovador, adaptándose a los diferentes entornos comerciales y culturales.
+                Hábil en aplicar técnicas de elaboración de pronósticos de ventas, estableciendo objetivos de ventas realistas y alineados con la estrategia organizacional, y diseñando programas de seguimiento de clientes y posventa para lograr su fidelidad.
               </p>
             </div>
           </motion.div>
@@ -327,9 +327,9 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Habilidades Directivas y de Gestión Empresarial</h3>
+              <h3 className="font-bold text-lg">Marketing y Comunicación</h3>
               <p className="text-sm mt-2">
-                Está capacitado para liderar, gestionar y controlar empresas y proyectos vinculados al comercio internacional. Posee competencias en dirección estratégica, planificación operativa y toma de decisiones que potencian la eficiencia de las operaciones internacionales
+                Especializado en planificar y coordinar campañas de comunicación, relaciones públicas, publicidad, promoción de ventas, mercadotecnia directa y merchandising, diseñando estrategias para el comercio electrónico y el marketing digital que posicionen eficazmente los productos y servicios en el mercado.
               </p>
             </div>
           </motion.div>
@@ -338,9 +338,9 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
             variants={itemVariants}
           >
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-bold text-lg">Ética Profesional y Sensibilidad Intercultural</h3>
+              <h3 className="font-bold text-lg">Logística y Distribución</h3>
               <p className="text-sm mt-2">
-                Demuestra un fuerte compromiso ético y social, con una actitud proactiva frente a los desafíos del comercio global. Su sensibilidad intercultural le permite establecer relaciones comerciales sólidas y exitosas, reconociendo y respetando las particularidades culturales y económicas de los distintos bloques internacionales.
+                Competente en estructurar estrategias de distribución y logística, asegurando la entrega eficiente de productos y servicios a los clientes en el lugar, el momento y el precio que así lo requieran, y estimando el ciclo de vida de un producto con base en las tendencias del crecimiento del mercado.
               </p>
             </div>
           </motion.div>
@@ -357,7 +357,7 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           <motion.div variants={itemVariants}>
             <motion.img 
-              src="/carreras/comercio/icono1.png" 
+              src="/carreras/ing-comercial/icono1.png" 
               alt="Ícono prácticas" 
               className="mx-auto mb-4 w-12 h-12"
               whileHover={{ rotate: 10 }}
@@ -374,7 +374,7 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
             className="cursor-pointer"
           >
             <motion.img 
-              src="/carreras/comercio/icono2.png" 
+              src="/carreras/ing-comercial/icono2.png" 
               alt="Ícono plan" 
               className="mx-auto mb-4 w-12 h-12"
               whileHover={{ rotate: 10 }}
@@ -489,7 +489,7 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
             
           >
             <motion.img 
-              src="/carreras/comercio/icono3.png" 
+              src="/carreras/ing-comercial/icono3.png" 
               alt="Ícono malla" 
               className="mx-auto mb-4 w-12 h-12"
               whileHover={{ rotate: 10 }}
@@ -515,14 +515,14 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
           className='text-4xl font-bold text-center mb-8'
           variants={itemVariants}
         >
-          Domina tu futuro con Finanzas
+          APRENDE COMERCIO ELECTRONICO
         </motion.h2>
         <motion.div 
           className='flex justify-center items-center flex-wrap gap-10 px-16'
           variants={containerVariants}
         >
           <motion.img 
-            src='/carreras/comercio/img3.jpg' 
+            src='/carreras/ing-comercial/img3.jpg' 
             className='rounded-3xl w-[80%] h-[330px] md:w-[670px] md:h-[670px] object-cover'
             variants={slideInFromLeft}
             whileHover={{ scale: 1.02 }}
@@ -531,7 +531,7 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
             className='flex justify-around md:grid grid-cols-2 grid-rows-2 items-center gap-10 flex-wrap'
             variants={containerVariants}
           >
-            {['/carreras/comercio/img4.jpg', '/carreras/comercio/img5.jpg', '/carreras/comercio/img6.jpg', '/carreras/comercio/img7.jpg'].map((img, index) => (
+            {['/carreras/ing-comercial/img4.jpg', '/carreras/ing-comercio/img5.jpg', '/carreras/ing-comercial/img6.jpg', '/carreras/ing-comercial/img7.jpg'].map((img, index) => (
               <motion.img 
                 key={index}
                 src={img}
@@ -555,7 +555,7 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
           className={`${styles.textoConImagen} text-5xl md:text-8xl text-center`}
           variants={itemVariants}
         >
-          VISITAS
+           LIDERA
         </motion.h2>
         <motion.div 
           className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 mt-10"
@@ -565,30 +565,22 @@ Y si estudias en la Universidad Real con el respaldo de la Cámara Nacional de C
             className="text-primary font-bold text-2xl leading-tight w-full md:w-1/3"
             variants={slideInFromLeft}
           >
-            Explora el Comercio Internacional en Terreno Real
+            Lidera proyectos, utilizando diferentes herramientas como Comercio Electronico
           </motion.div>
           <motion.div 
             className="text-[#555] w-full md:w-2/3 space-y-2 border-t-4 md:border-t-0 md:border-l-4 border-primary pl-4"
             variants={slideInFromRight}
           >
             <p>
-              ¡En la carrera de Comercio Internacional de la Universidad Real de la Cámara Nacional de Comercio, no solo estudias el mundo... lo vives!
+              Aquí pondrás en prácticas tus habilidades de emprendimiento de equipo, innovando en estrategias comerciales en el mercado Internacional, utilizando herramientas como comercio electrónico.
             </p>
             <br />
             <p>
-              Nuestros estudiantes cruzan fronteras y se embarcan en viajes académicos internacionales a países como Chile y Perú, donde visitan puertos estratégicos como el de Arica, zonas francas, centros logísticos y aduanas. Ahí, todo lo aprendido en clases cobra vida.
+              Poniendo en práctica en ferias y desarrollando proyectos de emprendimiento constantemente, desarrollado estrategias de comercialización con marketing, comercio electrónico, etc.
             </p>
             <br />
             <p>
-              Suben a buques de carga, analizan procesos reales de exportación e importación, interactúan con operadores logísticos y entienden cómo se mueve la economía global desde el terreno.
-            </p>
-            <br />
-            <p>
-              Pero no es solo teoría: estos viajes son una aventura profesional y cultural, donde cada paso fortalece su perfil internacional y los conecta con el ritmo dinámico del comercio exterior.
-            </p>
-            <br />
-            <p>
-              Vive la experiencia. Aprende con acción. Conviértete en un verdadero profesional del comercio internacional.
+              Además de aprender Inglés, para poder comunicarte y desarrollar.
             </p>
           </motion.div>
         </motion.div>
