@@ -10,10 +10,18 @@ export default function Footer() {
     <footer className="bg-dark text-white pt-20 pb-10 flex justify-center items-center flex-col">
       <section className=' flex justify-center items-center bg-dark text-white flex-col'>
           <h2 className='text-3xl font-bold mb-6'>Recibe noticias y actualizaciones</h2>
-          <form className='flex justify-center items-center'>
-              <input type='email' className='bg-white rounded-full w-[80%] max-w-[1000px] text-black h-[80px] pr-10 pl-16' placeholder='Ingreas tu email' />
-              <button type='submit' className="bg-primary px-8 h-[85px] rounded-full font-bold -ml-14">Suscribete</button>
-          </form>
+<form className="flex items-center bg-white rounded-full overflow-hidden w-full max-w-md shadow-md">
+      <input
+        type="email"
+        placeholder="ingresa tu mail"
+        className="flex-grow px-4 py-2 text-sm text-gray-700 focus:outline-none"
+      />
+      <button
+        className="bg-gradient-to-r from-sky-500 to-blue-500 text-white text-sm px-5 py-2 rounded-full hover:opacity-90 transition"
+      >
+        suscríbete
+      </button>
+    </form>
         </section>
       <div className="container mx-auto px-4">
         <div className="flex justify-center items-center flex-wrap gap-12 mx-auto mt-7 mb-4">
