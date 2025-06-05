@@ -29,7 +29,7 @@ const platforms = [
 export default function PlatformsSection() {
   return (
     <>
-    <section className="relative py-20 bg-black text-primary"
+    <section id='extencion' className="relative py-20 bg-black text-primary"
     >
     <img src='/Images/fondo2.png' className='w-full h-full absolute z-10 object-cover opacity-45 -my-20' />
       <div className="relative z-20 container mx-auto px-4">

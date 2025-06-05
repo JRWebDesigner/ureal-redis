@@ -24,7 +24,7 @@ const careers = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="w-[80%] mx-auto p-8 bg-white text-gray-800 my-9">
+    <section id="tuuni" className="w-[80%] mx-auto p-8 bg-white text-gray-800 my-9">
       <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-6">
         <div className="md:w-[35%]">
           <h2 className="text-4xl font-bold mb-4">¿Por qué elegirnos?</h2>

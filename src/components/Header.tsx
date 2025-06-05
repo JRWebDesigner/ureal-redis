@@ -33,11 +33,11 @@ export default function Header() {
   }, []);
 
   const links: NavLink[] = [
-    { name: "Tu Universidad", href: "#tuuni" },
-    { name: "Formacion", href: "#formacion" },
-    { name: "Extension", href: "#extencion" },
-    { name: "Servicios", href: "#servicios" },
-    { name: "Enlaces", href: "#enlaces" },
+    { name: "Tu Universidad", href: "/#tuuni" },
+    { name: "Ofrecemos", href: "/#formacion" },
+    { name: "Plataformas", href: "/#extencion" },
+    { name: "Carreras", href: "/carreras" },
+    { name: "Contactos", href: "/#contactos" },
   ];
 
   const isSubmenuActive = (submenuItems: Array<{ href: string }>) => {
@@ -134,7 +134,7 @@ export default function Header() {
                       href={link.href}
                       className={`px-4 py-2 rounded-lg transition-colors block ${
                         pathname === link.href
-                          ? "font-bold bg-white text-black"
+                          ? "font-bold"
                           : "hover:bg-gray-800"
                       }`}
                     >

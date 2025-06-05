@@ -38,8 +38,7 @@ export default function PromoMarquee() {
     </div>
     <div className='relative flex justify-center items-center w-full py-22 bg-[url(/Images/hero.jpg)] bg-cover bg-start'>
     <div className='absolute w-full h-full bg-black opacity-30' />
-      <Link href='/' className='relative z-20 bg-white text-sm text-gray-500 rounded-3xl shadow-xl py-4 px-9 hover:text-white hover:bg-gray-400 duration-200'>tu Universidad</Link>
-      
+      <Link href='/#tuuni' className='relative z-20 bg-white text-sm text-gray-500 rounded-3xl shadow-xl py-4 px-9 hover:text-white hover:bg-gray-400 duration-200'>tu Universidad</Link>      
     </div>
     </>
   )

@@ -49,15 +49,16 @@ export default function HeroSection() {
         {/* Redes Sociales */}
         <div className="flex md:flex-col gap-5 md:absolute right-4 top-1/2 transform -translate-y-1/2">
           {[
-            { icon: <FaFacebook size={20} />, color: 'text-white' },
-            { icon: <FaInstagram size={20} />, color: 'text-white' },
-            { icon: <FaTwitter size={20} />, color: 'text-white' },
-            { icon: <FaYoutube size={20} />, color: 'text-white' },
-            { icon: <FaTiktok size={20} />, color: 'text-white' }
+            { icon: <FaFacebook size={20} />, color: 'text-white', link:'https://www.facebook.com/univreal' },
+            { icon: <FaInstagram size={20} />, color: 'text-white', link:'https://instagram.com/univreal?utm_medium=copy_link' },
+            { icon: <FaTwitter size={20} />, color: 'text-white', link:'https://twitter.com/UnivReal?s=08' },
+            { icon: <FaYoutube size={20} />, color: 'text-white', link:'https://www.youtube.com/c/universidadreal/videos' },
+            { icon: <FaTiktok size={20} />, color: 'text-white', link:'https://www.tiktok.com/@univreal' }
           ].map((social, index) => (
             <Link 
               key={index} 
-              href="#" 
+              href={social.link}
+              target='blank' 
               className={`w-10 h-10 flex items-center justify-center bg-white/20 rounded-full hover:bg-white/30 transition-all ${social.color}`}
             >
               {social.icon}

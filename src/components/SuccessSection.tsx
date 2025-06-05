@@ -26,7 +26,7 @@ const features = [
 
 export default function SuccessSection() {
   return (
-    <section className="py-12 px-6 max-w-6xl mx-auto">
+    <section id='formacion' className="py-12 px-6 max-w-6xl mx-auto">
             
       <div className="grid md:grid-cols-2 gap-10">
            <div className="grid grid-cols-2 grid-rows-2 md:grid-cols-3 md:grid-rows-2 gap-4 p-4 max-w-6xl mx-auto"> {/* Top left big image */} <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="col-span-2 md:col-span-2 row-span-1" > <img
