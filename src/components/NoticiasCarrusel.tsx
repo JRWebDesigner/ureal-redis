@@ -37,14 +37,14 @@ export default function NoticiasCarrusel() {
   return (
     <>
       <h2 className='font-bold text-center text-3xl mt-16'>Últimas Noticias</h2>
-      <div className="relative w-[90%] h-[90dvh] md:h-[80dvh] mx-auto mt-8">
+      <div className="container relative w-[90%] h-[90dvh] max-h-[550px] md:h-[80dvh] mx-auto mt-8">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           navigation
           pagination={{ clickable: true }}
           autoplay={{ delay: 5000 }}
           loop
-          className="w-full h-full flex justify-center items-center"
+          className="max-w-7xl w-full h-full max-h-[500px] flex justify-center items-center"
         >
           {noticias.map((noticia) => (
             <SwiperSlide key={noticia.id} className="flex justify-center items-center relative pl-16">
