@@ -598,13 +598,6 @@ Ser un abogado ejecutivo implica:
           </motion.div>
         </motion.div>
       </motion.section>
-      <section className='h-[40dvh] flex justify-center items-center bg-dark text-white flex-col'>
-        <h2 className='text-3xl font-bold mb-6'>Recibe noticias y actualizaciones</h2>
-        <form className='flex justify-center items-center'>
-            <input type='email' className='bg-white rounded-full w-[80%] max-w-[1000px] text-black h-[80px] pr-10 pl-16' placeholder='Ingreas tu email' />
-            <button type='submit' className="bg-primary px-8 h-[85px] rounded-full font-bold -ml-14">Suscribete</button>
-        </form>
-      </section>
     </>
   )
 }
