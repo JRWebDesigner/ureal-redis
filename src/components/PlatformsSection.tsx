@@ -72,7 +72,7 @@ export default function PlatformsSection() {
         </div>
       </div>
     </section>
-    <section className="relative bg-[url('/Images/appFondo.jpg')] bg-cover h-[120dvh] md:h-[80dvh] max-h-[600px] w-full grid md:grid-cols-2 place-items-center px-5 md:px-22 py-5 md:py-16 gap-8">
+    <section className="relative bg-[url('/Images/appFondo.jpg')] bg-cover h-[120dvh] md:h-[80dvh] md:max-h-[600px] w-full grid md:grid-cols-2 place-items-center px-5 md:px-22 py-5 md:py-16 gap-8">
         <div className='absolute w-full h-full bg-white opacity-80' />
         <div className="relative z-20 grid gap-6">
             <h2 className="font-bold text-3xl md:text-5xl">Aplicación Móvil</h2>
@@ -90,7 +90,7 @@ export default function PlatformsSection() {
                 </a>
             </div>
         </div>
-        <img className='relative z-20 h-[400px] md:h-auto' src='/Images/mockup.png' alt='mockup' />
+        <img className='relative z-20  h-[300px] md:h-auto' src='/Images/mockup.png' alt='mockup' />
     </section>
     </>
   )
