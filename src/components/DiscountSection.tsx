@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Countdown, { CountdownRenderProps } from 'react-countdown'
 
 export default function DiscountSection() {
-  const targetDate = new Date('2025-05-30T00:00:00')
+  const targetDate = new Date('2025-06-17T00:00:00')
 
   const renderer = ({ days, hours, minutes, seconds, completed }: CountdownRenderProps) => {
     if (completed) {
